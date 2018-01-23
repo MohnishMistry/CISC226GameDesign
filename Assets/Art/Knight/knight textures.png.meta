@@ -1,0 +1,327 @@
+fileFormatVersion: 2
+guid: ee10304839cf63c41857443eb1d5b47d
+timeCreated: 1515966042
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: knight right shoulder
+    21300002: knight head
+    21300004: knight left shoulder
+    21300006: knight textures_3
+    21300008: knight right forearm
+    21300010: knight left forearm
+    21300012: knight textures_6
+    21300014: knight body
+    21300016: knight right thigh
+    21300018: knight left thigh
+    21300020: knight textures_10
+    21300022: knight textures_11
+    21300024: knight right shin
+    21300026: knight left shin
+    21300028: knight right foot
+    21300030: knight left foot
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: knight right shoulder
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 837
+        width: 58
+        height: 108
+      alignment: 9
+      pivot: {x: 0.2829033, y: 0.6960302}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knight head
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 801
+        width: 122
+        height: 114
+      alignment: 9
+      pivot: {x: 0.60487014, y: 0.10096178}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knight left shoulder
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 824
+        width: 76
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5467626, y: 0.75385207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knight textures_3
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 820
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knight right forearm
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 772
+        width: 88
+        height: 31
+      alignment: 9
+      pivot: {x: 0.2092234, y: 0.5917142}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knight left forearm
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 751
+        width: 87
+        height: 30
+      alignment: 9
+      pivot: {x: 0.214051, y: 0.42892048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knight textures_6
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 692
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knight body
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 571
+        width: 114
+        height: 166
+      alignment: 9
+      pivot: {x: 0.52493984, y: 0.27734375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knight right thigh
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 519
+        width: 51
+        height: 82
+      alignment: 9
+      pivot: {x: 0.47967634, y: 0.8160095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knight left thigh
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 519
+        width: 50
+        height: 79
+      alignment: 9
+      pivot: {x: 0.5, y: 0.81488967}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knight textures_10
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 477
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knight textures_11
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 488
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knight right shin
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 383
+        width: 49
+        height: 90
+      alignment: 9
+      pivot: {x: 0.52115333, y: 0.74185246}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knight left shin
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 374
+        width: 46
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5225339, y: 0.7303355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knight right foot
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 287
+        width: 60
+        height: 31
+      alignment: 9
+      pivot: {x: 0.27542266, y: 0.7006147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knight left foot
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 288
+        width: 60
+        height: 30
+      alignment: 9
+      pivot: {x: 0.29269817, y: 0.67275184}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

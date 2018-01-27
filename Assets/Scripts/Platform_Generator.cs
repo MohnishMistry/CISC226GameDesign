@@ -31,7 +31,7 @@ public class Platform_Generator : MonoBehaviour {
             distanceBetween = Random.Range(distanceBetweenMin, distanceBetweenMax);
             platformSelector = Random.Range(0, objectsPool.Length);
 
-            transform.position = new Vector3((transform.position.x + (platformWidths[platformSelector])/2 + distanceBetween) , transform.position.y, transform.position.z);
+            transform.position = new Vector3((transform.position.x + distanceBetween) , transform.position.y, transform.position.z);
             
             GameObject newPlatform = objectsPool[platformSelector].GetPooledObject();
 
@@ -40,7 +40,7 @@ public class Platform_Generator : MonoBehaviour {
 
             newPlatform.SetActive(true);
 
-            transform.position = new Vector3((transform.position.x + (platformWidths[platformSelector]) /2 ), transform.position.y, transform.position.z);
+            transform.position = new Vector3((transform.position.x + (platformWidths[platformSelector])), transform.position.y, transform.position.z);
 
         }
     }

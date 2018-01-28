@@ -5,13 +5,13 @@ using UnityEngine;
 public class Platform_Generator : MonoBehaviour {
 
     public Transform generationPoint;
-    private float distanceBetween;
+    public float distanceBetween;
 
     public float distanceBetweenMin;
     public float distanceBetweenMax;
 
-    private int platformSelector;
-    private float[] platformWidths;
+    public int platformSelector;
+    public float[] platformWidths;
     public Object_Pooler[] objectsPool;
 
 	// Use this for initialization

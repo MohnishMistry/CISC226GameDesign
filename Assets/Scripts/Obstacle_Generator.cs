@@ -24,12 +24,15 @@ void Update () {
             transform.position = new Vector3((transform.position.x + platformGeneratorScript.distanceBetween), transform.position.y, transform.position.z); //Move Obstacle Generator to the start of the newly generated platform
             platformWidth = platformGeneratorScript.platformWidths[platformGeneratorScript.platformSelector];
 
-            obstacleDistance = Random.Range(0, platformWidth);
+            if ((platformWidth > 3))
+            {
+                obstacleDistance = Random.Range(0.33f*platformWidth, 0.66f*platformWidth);
 
-            transform.position = new Vector3((transform.position.x + obstacleDistance), transform.position.y, transform.position.z); //Move Obstacle Generator to a random distance on the platform
-            Instantiate(obstacle, transform.position, transform.rotation);
+                transform.position = new Vector3((transform.position.x + obstacleDistance), transform.position.y, transform.position.z); //Move Obstacle Generator to a random distance on the platform
+                Instantiate(obstacle, transform.position, transform.rotation);
 
-            transform.position = new Vector3((transform.position.x + platformWidth-obstacleDistance), transform.position.y, transform.position.z); //Move Obstacle Generator to a random distance on the platform
+                transform.position = platformGenerator.transform.position; 
+            }
         }
 
     }

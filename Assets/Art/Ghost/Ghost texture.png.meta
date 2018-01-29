@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: 52553208d8ed0594b9d63c0a3486268c
+timeCreated: 1517165571
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Ghost_Right_Shoulder
+    21300002: Ghost_Body
+    21300004: Ghost_Left_Shoulder
+    21300006: Ghost_Left_Forearm
+    21300008: Ghost_Right_Forearm
+    21300010: Ghost texture_5
+    21300012: Ghost texture_6
+    21300014: Ghost texture_7
+    21300016: Ghost_Right_Foot
+    21300018: Ghost_Left_Foot
+    21300020: Ghost_Right_Leg
+    21300022: Ghost_Left_Leg
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ghost_Right_Shoulder
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1255
+        width: 41
+        height: 104
+      alignment: 9
+      pivot: {x: 0.5, y: 0.88134766}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ghost_Body
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1069
+        width: 157
+        height: 314
+      alignment: 9
+      pivot: {x: 0.52971905, y: 0.46037456}
+      border: {x: 9, y: 2, z: 1, w: 6}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ghost_Left_Shoulder
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1270
+        width: 48
+        height: 98
+      alignment: 9
+      pivot: {x: 0.30558777, y: 0.86502016}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ghost_Left_Forearm
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1225
+        width: 73
+        height: 30
+      alignment: 9
+      pivot: {x: 0.13780735, y: 0.3963135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ghost_Right_Forearm
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1194
+        width: 82
+        height: 31
+      alignment: 9
+      pivot: {x: 0.13962573, y: 0.6756001}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ghost_Right_Foot
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1146
+        width: 48
+        height: 25
+      alignment: 9
+      pivot: {x: 0.1759793, y: 0.68663573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ghost_Left_Foot
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1150
+        width: 53
+        height: 28
+      alignment: 9
+      pivot: {x: 0.2945833, y: 0.69441444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ghost_Right_Leg
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1074
+        width: 40
+        height: 93
+      alignment: 9
+      pivot: {x: 0.53888243, y: 0.7174072}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ghost_Left_Leg
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1076
+        width: 42
+        height: 97
+      alignment: 9
+      pivot: {x: 0.51851547, y: 0.69240797}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

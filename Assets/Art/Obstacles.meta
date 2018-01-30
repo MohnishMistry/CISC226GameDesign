@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 1da70f38e53b1bc40b47a3492d1b17ee
 folderAsset: yes
 timeCreated: 1517091177
+=======
+guid: eb92af7d53329da4297992fd154cf2a4
+folderAsset: yes
+timeCreated: 1517177911
+>>>>>>> Ghost-Texture
 licenseType: Free
 DefaultImporter:
   externalObjects: {}

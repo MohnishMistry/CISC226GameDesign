@@ -37,7 +37,7 @@ public class Player_Controller : MonoBehaviour {
             myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpStrength);
         }
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
         if(Input.GetKey(KeyCode.UpArrow))
         {
             if (jumpTimeTracker > 0)
@@ -57,14 +57,14 @@ public class Player_Controller : MonoBehaviour {
         {
             jumpTimeTracker = jumpTime; 
         }
-=======
+//=======
         else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             print("Down arrow pressed");
             myAnimator.SetBool("swinging", true);
         }
 
->>>>>>> Ghost-Texture
+//>>>>>>> Ghost-Texture
         myAnimator.SetBool("grounded", grounded);
 	}
 }

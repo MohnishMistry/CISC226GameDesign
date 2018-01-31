@@ -58,7 +58,7 @@ public class Player_Controller : MonoBehaviour {
             jumpTimeTracker = jumpTime; 
         }
 //=======
-        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             print("Down arrow pressed");
             myAnimator.SetBool("swinging", true);

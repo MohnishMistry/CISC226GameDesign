@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Background_Generator : MonoBehaviour {
 
-    public GameObject background;
     public Transform BackGroundGenerationPoint;
     private float backgroundWidth;
+    public Object_Pooler[] obstaclePool;
+    public int backgroundSelector;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         backgroundWidth = 14.4F;
 	}
 	
@@ -18,8 +19,14 @@ public class Background_Generator : MonoBehaviour {
 		
         if(transform.position.x < BackGroundGenerationPoint.position.x)
         {
+            backgroundSelector = Random.Range(0, obstaclePool.Length);
+            GameObject newBackground = obstaclePool[backgroundSelector].GetPooledObject();
+
             transform.position = new Vector3(transform.position.x + backgroundWidth, transform.position.y, transform.position.z);
-            Instantiate(background, transform.position, transform.rotation);
+
+            newBackground.transform.position = transform.position;
+            newBackground.SetActive(true);
+
         }
-	}
+    }
 }

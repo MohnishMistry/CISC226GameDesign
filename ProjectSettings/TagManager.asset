@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ghost Costume
   - Knight Costume
+  - Thorns
+  - Dummy
   layers:
   - Default
   - TransparentFX

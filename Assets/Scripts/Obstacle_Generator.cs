@@ -7,7 +7,9 @@ public class Obstacle_Generator : MonoBehaviour {
     public Transform generationPoint;
     public GameObject platformGenerator;
     private Platform_Generator platformGeneratorScript;
-    public GameObject obstacle; 
+    public Object_Pooler[] obstaclePool;
+    public int obstacleSelector;
+
 
     public float obstacleDistance;
     public float platformWidth;
@@ -22,11 +24,26 @@ public class Obstacle_Generator : MonoBehaviour {
     {
         if (Random.value > 0.3)
         {
+            obstacleSelector = Random.Range(0, obstaclePool.Length);
+            GameObject newObstacle = obstaclePool[obstacleSelector].GetPooledObject();
+
             platformWidth = platformGeneratorScript.platformWidths[platformGeneratorScript.platformSelector];
             obstacleDistance = Random.Range(0.33f * platformWidth, 0.66f * platformWidth);
-            obstaclePosition = new Vector3((transform.position.x + obstacleDistance), transform.position.y, transform.position.z); //Move Obstacle Generator to a random distance on the platform
-            Instantiate(obstacle, obstaclePosition, transform.rotation);
-        } 
+
+            if (newObstacle.tag == "Thorns")
+            {
+                obstaclePosition = new Vector3((transform.position.x + obstacleDistance), -2.67f, transform.position.z); //Move Obstacle Generator to a random distance on the platform
+            }
+            else if (newObstacle.tag == "Dummy")
+            {
+                obstaclePosition = new Vector3((transform.position.x + obstacleDistance), transform.position.y, transform.position.z); //Move Obstacle Generator to a random distance on the platform
+
+            }
+
+            newObstacle.transform.position = obstaclePosition; 
+            newObstacle.SetActive(true);
+
+        }
     }
 
 }

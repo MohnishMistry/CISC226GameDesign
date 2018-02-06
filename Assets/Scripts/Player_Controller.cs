@@ -9,18 +9,19 @@ public class Player_Controller : MonoBehaviour {
     public bool grounded;
     public bool swinging;
     public LayerMask whatIsGround;
+    private bool switchCostumeLeft, switchCostumeRight;
 
     private Collider2D myCollider;
     private Rigidbody2D myRigidBody;
     private Animator myAnimator;
 
-<<<<<<< HEAD
+
     public float jumpTime;
     private float jumpTimeTracker; 
-=======
+
     GameObject Knight, Ghost;
     public int characterselect = 1;
->>>>>>> Ghost-Texture
+
 
 
 	// Use this for initialization
@@ -29,12 +30,13 @@ public class Player_Controller : MonoBehaviour {
         Ghost = GameObject.Find("Ghost Costume");
         myRigidBody = GetComponent<Rigidbody2D>();
         myCollider = GetComponent<Collider2D>();
-<<<<<<< HEAD
-        myAnimator = GetComponent<Animator>();
-        jumpTimeTracker = jumpTime; 
-=======
-        myAnimator = Knight.GetComponent<Animator>();     
->>>>>>> Ghost-Texture
+
+        myAnimator = Knight.GetComponent<Animator>();
+        myAnimator.SetBool("swinging", false);
+        jumpTimeTracker = jumpTime;
+        switchCostumeLeft = false;
+        switchCostumeRight = false;
+
     }
 	
 	// Update is called once per frame
@@ -47,7 +49,6 @@ public class Player_Controller : MonoBehaviour {
         {
             Knight.SetActive(true);
             myAnimator = Knight.GetComponent<Animator>();
-            myAnimator.SetBool("swinging", false);
             myAnimator.SetInteger("costume", characterselect);
             Ghost.SetActive(false);
         }
@@ -56,7 +57,6 @@ public class Player_Controller : MonoBehaviour {
         {
             Ghost.SetActive(true);
             myAnimator = Ghost.GetComponent<Animator>();
-            myAnimator.SetBool("swinging", false);
             Knight.SetActive(false);
         }
 
@@ -65,7 +65,7 @@ public class Player_Controller : MonoBehaviour {
             myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpStrength);
         }
 
-<<<<<<< HEAD
+
 //<<<<<<< HEAD
         if(Input.GetKey(KeyCode.UpArrow))
         {
@@ -88,42 +88,56 @@ public class Player_Controller : MonoBehaviour {
         }
 //=======
         if (Input.GetKeyDown(KeyCode.DownArrow))
-=======
+
         if (Input.GetKeyDown(KeyCode.DownArrow) && characterselect == 1)
->>>>>>> Ghost-Texture
+
         {
             myAnimator.SetBool("swinging", true);
         }
 
-<<<<<<< HEAD
+
 //>>>>>>> Ghost-Texture
         myAnimator.SetBool("grounded", grounded);
-=======
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            if ( characterselect == 2)
+
+        if (Input.GetKeyDown(KeyCode.RightArrow) || switchCostumeRight==true)
+        {   
+            if (swinging == true)
+            {
+                switchCostumeRight = true;
+            }
+
+            else if ( characterselect == 2)
             {
                 characterselect = 1;
+                switchCostumeRight = false;
 
             }
             else
             {
              characterselect = characterselect + 1;
+             switchCostumeRight = false;
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || switchCostumeLeft== true)
         {
-            if (characterselect == 1)
+            if (swinging == true)
+            {
+                switchCostumeLeft = true;
+            }
+
+            else if (characterselect == 1)
             {
                 characterselect = 2;
+                switchCostumeLeft = false;
             }
             else
             {
                 characterselect = characterselect - 1;
+                switchCostumeLeft = false;
             }
         }
->>>>>>> Ghost-Texture
+
 	}
 }
 

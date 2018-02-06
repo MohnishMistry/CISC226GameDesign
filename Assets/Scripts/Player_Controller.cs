@@ -34,6 +34,7 @@ public class Player_Controller : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
         {
+            Physics2D.IgnoreLayerCollision(9, 10, false);
             myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpStrength);
         }
 
@@ -58,9 +59,10 @@ public class Player_Controller : MonoBehaviour {
             jumpTimeTracker = jumpTime; 
         }
 //=======
-        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             print("Down arrow pressed");
+            Physics2D.IgnoreLayerCollision(9, 10, true);
             myAnimator.SetBool("swinging", true);
         }
 

@@ -704,6 +704,7 @@ MonoBehaviour:
   moveSpeed: 5
   jumpStrength: 10
   grounded: 0
+  swinging: 0
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256

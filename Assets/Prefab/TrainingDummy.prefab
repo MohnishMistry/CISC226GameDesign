@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4834362068882750}
   - component: {fileID: 212261562079516158}
   - component: {fileID: 61440067008407472}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrainingDummy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -25,6 +25,7 @@ public class Obstacle_Generator : MonoBehaviour {
             platformWidth = platformGeneratorScript.platformWidths[platformGeneratorScript.platformSelector];
             obstacleDistance = Random.Range(0.33f * platformWidth, 0.66f * platformWidth);
             obstaclePosition = new Vector3((transform.position.x + obstacleDistance), transform.position.y, transform.position.z); //Move Obstacle Generator to a random distance on the platform
+            obstacle.layer = 10;
             Instantiate(obstacle, obstaclePosition, transform.rotation);
         } 
     }

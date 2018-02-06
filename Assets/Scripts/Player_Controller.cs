@@ -15,7 +15,7 @@ public class Player_Controller : MonoBehaviour {
     private Animator myAnimator;
 
     GameObject Knight, Ghost;
-    int characterselect = 1;
+    public int characterselect = 1;
 
 
 	// Use this for initialization
@@ -31,13 +31,14 @@ public class Player_Controller : MonoBehaviour {
 	void Update () {
         myRigidBody.velocity = new Vector2(moveSpeed,myRigidBody.velocity.y);
         grounded = Physics2D.IsTouchingLayers(myCollider, whatIsGround);
-        myAnimator.SetBool("swinging", false);
         myAnimator.SetBool("grounded", grounded);
 
         if (characterselect == 1)
         {
             Knight.SetActive(true);
             myAnimator = Knight.GetComponent<Animator>();
+            myAnimator.SetBool("swinging", false);
+            myAnimator.SetInteger("costume", characterselect);
             Ghost.SetActive(false);
         }
 
@@ -45,6 +46,7 @@ public class Player_Controller : MonoBehaviour {
         {
             Ghost.SetActive(true);
             myAnimator = Ghost.GetComponent<Animator>();
+            myAnimator.SetBool("swinging", false);
             Knight.SetActive(false);
         }
 

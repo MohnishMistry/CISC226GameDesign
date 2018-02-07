@@ -251,6 +251,8 @@ Transform:
   m_Children:
   - {fileID: 1151049253}
   - {fileID: 1220588982}
+  - {fileID: 630284549}
+  - {fileID: 1424850584}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -318,6 +320,8 @@ MonoBehaviour:
   obstaclePool:
   - {fileID: 1151049254}
   - {fileID: 1220588983}
+  - {fileID: 630284550}
+  - {fileID: 1424850585}
   obstacleSelector: 0
   obstacleDistance: 0
   platformWidth: 0
@@ -334,6 +338,49 @@ Transform:
   m_Father: {fileID: 1295092689}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &630284548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 630284549}
+  - component: {fileID: 630284550}
+  m_Layer: 0
+  m_Name: Large Ghost Wall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &630284549
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 630284548}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231953591}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &630284550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 630284548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63026bb6a9c04a644a3c58ab97d1ad13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObject: {fileID: 1136159002672264, guid: ff33121218a584546b3a62f1b769f708,
+    type: 2}
+  pooledAmount: 5
 --- !u!1 &636018369
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,7 +435,7 @@ GameObject:
   - component: {fileID: 700929748}
   - component: {fileID: 700929747}
   - component: {fileID: 700929746}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -434,7 +481,7 @@ MonoBehaviour:
   moveSpeed: 5
   jumpStrength: 10
   grounded: 0
-  swinging: 0
+  ability: 0
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
@@ -874,6 +921,18 @@ Prefab:
       propertyPath: m_Name
       value: Knight Costume
       objectReference: {fileID: 0}
+    - target: {fileID: 1689760938640376, guid: efe00111435aee84b97a07dc11ca1afb, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1941476112261342, guid: efe00111435aee84b97a07dc11ca1afb, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366087323927148, guid: efe00111435aee84b97a07dc11ca1afb, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: efe00111435aee84b97a07dc11ca1afb, type: 2}
   m_IsPrefabParent: 0
@@ -919,7 +978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pooledObject: {fileID: 1858888330623812, guid: 1e8694cb0d14a1640a5e3108511fb2db,
     type: 2}
-  pooledAmount: 5
+  pooledAmount: 0
 --- !u!1 &1220588981
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,7 +1021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pooledObject: {fileID: 1597713958119274, guid: 2757d1eb465534b4c8e9826a7e93afb4,
     type: 2}
-  pooledAmount: 5
+  pooledAmount: 0
 --- !u!1 &1295092687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1276,6 +1335,49 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1424850583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1424850584}
+  - component: {fileID: 1424850585}
+  m_Layer: 0
+  m_Name: Small Ghost Wall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1424850584
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1424850583}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231953591}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1424850585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1424850583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63026bb6a9c04a644a3c58ab97d1ad13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObject: {fileID: 1467959057249150, guid: dda1e85e6ca566c46a45f4ddc6b975f5,
+    type: 2}
+  pooledAmount: 5
 --- !u!4 &1474653473 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4555289392969136, guid: efe00111435aee84b97a07dc11ca1afb,
@@ -1747,7 +1849,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1806868218
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1847,6 +1949,42 @@ Prefab:
     - target: {fileID: 1016669353911528, guid: 787f577cac52d8146be0c81e8f747e6a, type: 2}
       propertyPath: m_Name
       value: Ghost Costume
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869891272571964, guid: 787f577cac52d8146be0c81e8f747e6a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156282329656356, guid: 787f577cac52d8146be0c81e8f747e6a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022310609544052, guid: 787f577cac52d8146be0c81e8f747e6a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549333755361312, guid: 787f577cac52d8146be0c81e8f747e6a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552537858739486, guid: 787f577cac52d8146be0c81e8f747e6a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1913576873817510, guid: 787f577cac52d8146be0c81e8f747e6a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903256932036886, guid: 787f577cac52d8146be0c81e8f747e6a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914166939643874, guid: 787f577cac52d8146be0c81e8f747e6a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1268944607460432, guid: 787f577cac52d8146be0c81e8f747e6a, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 787f577cac52d8146be0c81e8f747e6a, type: 2}

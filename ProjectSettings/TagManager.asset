@@ -8,6 +8,8 @@ TagManager:
   - Knight Costume
   - Thorns
   - Dummy
+  - Large Ghost Wall
+  - Small Ghost Wall
   layers:
   - Default
   - TransparentFX

@@ -7,7 +7,7 @@ public class Player_Controller : MonoBehaviour {
     public float moveSpeed;
     public float jumpStrength;
     public bool grounded;
-    public bool swinging;
+    public bool ability;
     public LayerMask whatIsGround;
     private bool switchCostumeLeft, switchCostumeRight;
 
@@ -32,7 +32,7 @@ public class Player_Controller : MonoBehaviour {
         myCollider = GetComponent<Collider2D>();
 
         myAnimator = Knight.GetComponent<Animator>();
-        myAnimator.SetBool("swinging", false);
+        myAnimator.SetBool("ability", false);
         jumpTimeTracker = jumpTime;
         switchCostumeLeft = false;
         switchCostumeRight = false;
@@ -44,12 +44,12 @@ public class Player_Controller : MonoBehaviour {
         myRigidBody.velocity = new Vector2(moveSpeed,myRigidBody.velocity.y);
         grounded = Physics2D.IsTouchingLayers(myCollider, whatIsGround);
         myAnimator.SetBool("grounded", grounded);
+        ability = myAnimator.GetBool("ability");
 
         if (characterselect == 1)
         {
             Knight.SetActive(true);
             myAnimator = Knight.GetComponent<Animator>();
-            myAnimator.SetInteger("costume", characterselect);
             Ghost.SetActive(false);
         }
 
@@ -87,13 +87,13 @@ public class Player_Controller : MonoBehaviour {
             jumpTimeTracker = jumpTime; 
         }
 //=======
-        if (Input.GetKeyDown(KeyCode.DownArrow))
 
-        if (Input.GetKeyDown(KeyCode.DownArrow) && characterselect == 1)
-
+        if ((Input.GetKeyDown(KeyCode.DownArrow) || (Input.GetKeyDown(KeyCode.Space))))
         {
-            myAnimator.SetBool("swinging", true);
+            myAnimator.SetBool("ability", true);
+            
         }
+
 
 
 //>>>>>>> Ghost-Texture
@@ -101,7 +101,7 @@ public class Player_Controller : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.RightArrow) || switchCostumeRight==true)
         {   
-            if (swinging == true)
+            if (ability == true)
             {
                 switchCostumeRight = true;
             }
@@ -121,7 +121,7 @@ public class Player_Controller : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.LeftArrow) || switchCostumeLeft== true)
         {
-            if (swinging == true)
+            if (ability == true)
             {
                 switchCostumeLeft = true;
             }

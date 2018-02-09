@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61440067008407472}
   - component: {fileID: 114184621033886350}
   - component: {fileID: 114132632355748314}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrainingDummy
   m_TagString: Dummy
   m_Icon: {fileID: 0}
@@ -80,6 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  theGameManager: {fileID: 0}
 --- !u!114 &114184621033886350
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -92,6 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformDestructionPoint: {fileID: 0}
+  player: {fileID: 0}
 --- !u!212 &212261562079516158
 SpriteRenderer:
   m_ObjectHideFlags: 1

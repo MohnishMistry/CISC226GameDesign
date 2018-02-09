@@ -27,7 +27,6 @@ public class Platform_Generator : MonoBehaviour {
         }
 
         obstacleGeneratorScript = obstacleGenerator.GetComponent<Obstacle_Generator>();
-
     }
 
     // Update is called once per frame
@@ -44,7 +43,7 @@ public class Platform_Generator : MonoBehaviour {
             newPlatform.transform.position = transform.position;
             newPlatform.transform.rotation = transform.rotation;
 
-            newPlatform.SetActive(true);
+            newPlatform.SetActiveRecursively(true);
 
             if (platformWidths[platformSelector] > 3)
             {

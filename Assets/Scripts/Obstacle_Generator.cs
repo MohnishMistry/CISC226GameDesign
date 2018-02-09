@@ -46,12 +46,12 @@ public class Obstacle_Generator : MonoBehaviour {
             }
             else if (newObstacle.tag == "Small Ghost Wall")
             {
-                obstaclePosition = new Vector3((transform.position.x + obstacleDistance), transform.position.y, transform.position.z); //Move Obstacle Generator to a random distance on the platform
+                obstaclePosition = new Vector3((transform.position.x + obstacleDistance), transform.position.y-0.55f, transform.position.z); //Move Obstacle Generator to a random distance on the platform
 
             }
 
             newObstacle.transform.position = obstaclePosition; 
-            newObstacle.SetActive(true);
+            newObstacle.SetActiveRecursively(true);
 
         }
     }

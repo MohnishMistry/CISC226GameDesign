@@ -38,5 +38,62 @@ public class GameManager : MonoBehaviour {
         platformGenerator.position = platformStartPoint;
         BackgroundGenerator.position = backgroundStartPoint;
         thePlayer.gameObject.SetActive(true);
+        OnDeathClear();
+    }
+
+    List<GameObject> FindGameObjectsWithLayer(int layer)
+    {
+        GameObject[] goArray = FindObjectsOfType(typeof(GameObject)) as GameObject[];
+        List<GameObject> goList = new List<GameObject>();
+
+        for (int i = 0; i < goArray.Length; i++)
+        {
+            if (goArray[i].layer == layer)
+            {
+                goList.Add(goArray[i]);
+            }
+        }
+        if (goList.Count == 0)
+        {
+            return null;
+        }
+        return goList;
+    }
+
+    void OnDeathClear()
+    {
+        GameObject Start;
+        Start = GameObject.Find("Start");
+
+        List<GameObject> backgrounds = FindGameObjectsWithLayer(11);
+        if (backgrounds != null)
+        {
+            foreach (GameObject background in backgrounds)
+            {
+                if (background.name != "Start Background")
+                {
+                    background.SetActive(false);
+                }
+            }
+        } 
+ 
+        List<GameObject> obstacles = FindGameObjectsWithLayer(10);
+        if (obstacles != null)
+        {
+            foreach (GameObject obstacle in obstacles)
+            {
+                obstacle.SetActive(false);
+            }
+        } 
+
+        List<GameObject> grounds = FindGameObjectsWithLayer(8);
+        if (grounds != null)
+        {
+            foreach (GameObject ground in grounds)
+            {
+                ground.SetActive(false);
+            }
+            Start.SetActiveRecursively(true);
+        } 
     }
 }

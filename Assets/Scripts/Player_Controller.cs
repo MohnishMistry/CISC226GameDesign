@@ -153,7 +153,7 @@ public class Player_Controller : MonoBehaviour {
     {
         if (other.gameObject.tag == "killbox")
         {
-            theGameManager.RestartGame();
+            death = true; 
         }
     }
 }

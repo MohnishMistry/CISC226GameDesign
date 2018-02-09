@@ -157,6 +157,7 @@ GameObject:
   m_Component:
   - component: {fileID: 11389017}
   - component: {fileID: 11389016}
+  - component: {fileID: 11389015}
   m_Layer: 8
   m_Name: Start
   m_TagString: Untagged
@@ -164,6 +165,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!212 &11389015
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 11389014}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1000
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
 --- !u!61 &11389016
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1261,18 +1306,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1174779819497210, guid: 77ee9ee8db377ab458c9ded75a7f6a42, type: 2}
       propertyPath: m_Name
-      value: background final (3)
+      value: Start Background
       objectReference: {fileID: 0}
-    - target: {fileID: 4833057992543830, guid: 77ee9ee8db377ab458c9ded75a7f6a42, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.76322657
-      objectReference: {fileID: 0}
-    - target: {fileID: 4833057992543830, guid: 77ee9ee8db377ab458c9ded75a7f6a42, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.7019328
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114362856285323752, guid: 77ee9ee8db377ab458c9ded75a7f6a42, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 77ee9ee8db377ab458c9ded75a7f6a42, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1419776367
@@ -1568,10 +1604,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1174779819497210, guid: 77ee9ee8db377ab458c9ded75a7f6a42, type: 2}
       propertyPath: m_Name
-      value: background final (2)
+      value: Start Background
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114362856285323752, guid: 77ee9ee8db377ab458c9ded75a7f6a42, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 77ee9ee8db377ab458c9ded75a7f6a42, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1584769235

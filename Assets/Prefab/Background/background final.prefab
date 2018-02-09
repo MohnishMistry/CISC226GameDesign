@@ -20,8 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4833057992543830}
   - component: {fileID: 212398772973315490}
-  - component: {fileID: 114362856285323752}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: background final
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,8 +36,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4812388634193878}
   - component: {fileID: 212581905800250652}
-  m_Layer: 0
-  m_Name: bottom
+  m_Layer: 11
+  m_Name: Start Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,18 +70,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114362856285323752
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1174779819497210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe183c7a2fd24014db23021813c2db2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  platformDestructionPoint: {fileID: 0}
 --- !u!212 &212398772973315490
 SpriteRenderer:
   m_ObjectHideFlags: 1

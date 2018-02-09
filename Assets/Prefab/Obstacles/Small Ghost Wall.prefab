@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4778385155351408}
   - component: {fileID: 212340209586553764}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ghost ooze left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 61118447855684892}
   - component: {fileID: 114982326075297594}
   - component: {fileID: 114423314512767106}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Small Ghost Wall
   m_TagString: Small Ghost Wall
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4181235615154728}
   - component: {fileID: 212710491981068724}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ghost ooze right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4258838053732798}
   - component: {fileID: 212042622038294970}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Small Ghost Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4705982221730334}
   - component: {fileID: 212044979771605042}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ghost ooze top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,6 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformDestructionPoint: {fileID: 0}
+  player: {fileID: 0}
 --- !u!212 &212042622038294970
 SpriteRenderer:
   m_ObjectHideFlags: 1

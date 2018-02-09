@@ -7,30 +7,67 @@ public class Player_Controller : MonoBehaviour {
     public float moveSpeed;
     public float jumpStrength;
     public bool grounded;
-    public bool swinging;
+    public bool ability;
+    public bool death;
     public LayerMask whatIsGround;
+    private bool switchCostumeLeft, switchCostumeRight;
 
     private Collider2D myCollider;
     private Rigidbody2D myRigidBody;
     private Animator myAnimator;
 
+    public GameManager theGameManager;
+
+
     public float jumpTime;
     private float jumpTimeTracker; 
+
+    GameObject Knight, Ghost;
+    public int characterselect = 1;
+
 
 
 	// Use this for initialization
 	void Start () {
+        Knight = GameObject.Find("Knight Costume");
+        Ghost = GameObject.Find("Ghost Costume");
         myRigidBody = GetComponent<Rigidbody2D>();
         myCollider = GetComponent<Collider2D>();
-        myAnimator = GetComponent<Animator>();
-        jumpTimeTracker = jumpTime; 
+
+        myAnimator = Knight.GetComponent<Animator>();
+        myAnimator.SetBool("ability", false);
+        jumpTimeTracker = jumpTime;
+        switchCostumeLeft = false;
+        switchCostumeRight = false;
+        death = false;
+
     }
 	
 	// Update is called once per frame
 	void Update () {
         myRigidBody.velocity = new Vector2(moveSpeed,myRigidBody.velocity.y);
         grounded = Physics2D.IsTouchingLayers(myCollider, whatIsGround);
-        myAnimator.SetBool("swinging", false);
+        myAnimator.SetBool("grounded", grounded);
+        ability = myAnimator.GetBool("ability");
+
+        if (death == true)
+        {
+            theGameManager.RestartGame();
+        }
+
+        if (characterselect == 1)
+        {
+            Knight.SetActive(true);
+            myAnimator = Knight.GetComponent<Animator>();
+            Ghost.SetActive(false);
+        }
+
+        else if (characterselect == 2)
+        {
+            Ghost.SetActive(true);
+            myAnimator = Ghost.GetComponent<Animator>();
+            Knight.SetActive(false);
+        }
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
         {
@@ -38,8 +75,9 @@ public class Player_Controller : MonoBehaviour {
             myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpStrength);
         }
 
-//<<<<<<< HEAD
-        if(Input.GetKey(KeyCode.UpArrow))
+
+        //<<<<<<< HEAD
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Joystick1Button1))
         {
             if (jumpTimeTracker > 0)
             {
@@ -49,7 +87,7 @@ public class Player_Controller : MonoBehaviour {
 
         }
 
-        if (Input.GetKeyUp(KeyCode.UpArrow))
+        if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.Joystick1Button1))
         {
             jumpTimeTracker = 0; 
         }
@@ -59,15 +97,73 @@ public class Player_Controller : MonoBehaviour {
             jumpTimeTracker = jumpTime; 
         }
 //=======
+<<<<<<< HEAD
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             print("Down arrow pressed");
             Physics2D.IgnoreLayerCollision(9, 10, true);
             myAnimator.SetBool("swinging", true);
+=======
+
+        if ((Input.GetKeyDown(KeyCode.DownArrow) || (Input.GetKeyDown(KeyCode.Space)) || Input.GetKeyUp(KeyCode.Joystick1Button0)))
+        {
+            myAnimator.SetBool("ability", true);
+            
+>>>>>>> master
         }
+
+
 
 //>>>>>>> Ghost-Texture
         myAnimator.SetBool("grounded", grounded);
+
+        if (Input.GetKeyDown(KeyCode.RightArrow) || switchCostumeRight== true || Input.GetKeyUp(KeyCode.Joystick1Button5))
+        {   
+            if (ability == true)
+            {
+                switchCostumeRight = true;
+            }
+
+            else if ( characterselect == 2)
+            {
+                characterselect = 1;
+                switchCostumeRight = false;
+
+            }
+            else
+            {
+             characterselect = characterselect + 1;
+             switchCostumeRight = false;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || switchCostumeLeft== true || Input.GetKeyUp(KeyCode.Joystick1Button4))
+        {
+            if (ability == true)
+            {
+                switchCostumeLeft = true;
+            }
+
+            else if (characterselect == 1)
+            {
+                characterselect = 2;
+                switchCostumeLeft = false;
+            }
+            else
+            {
+                characterselect = characterselect - 1;
+                switchCostumeLeft = false;
+            }
+        }
+
 	}
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "killbox")
+        {
+            theGameManager.RestartGame();
+        }
+    }
 }
 

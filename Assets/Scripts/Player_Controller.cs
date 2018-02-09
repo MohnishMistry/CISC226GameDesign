@@ -22,8 +22,8 @@ public class Player_Controller : MonoBehaviour {
     public float jumpTime;
     private float jumpTimeTracker; 
 
-    GameObject Knight, Ghost;
-    public int characterselect = 1;
+    GameObject Knight, Ghost, KnightIcon, GhostIcon;
+    public int characterselect;
 
 
 
@@ -31,11 +31,16 @@ public class Player_Controller : MonoBehaviour {
 	void Start () {
         Knight = GameObject.Find("Knight Costume");
         Ghost = GameObject.Find("Ghost Costume");
+        KnightIcon = GameObject.Find("Knight Icon");
+        GhostIcon = GameObject.Find("Ghost Icon");
         myRigidBody = GetComponent<Rigidbody2D>();
         myCollider = GetComponent<Collider2D>();
 
         myAnimator = Knight.GetComponent<Animator>();
         myAnimator.SetBool("ability", false);
+        characterselect = 1;
+        KnightIcon.SetActive(true);
+        GhostIcon.SetActive(false);
         jumpTimeTracker = jumpTime;
         switchCostumeLeft = false;
         switchCostumeRight = false;
@@ -58,25 +63,29 @@ public class Player_Controller : MonoBehaviour {
         if (characterselect == 1)
         {
             Knight.SetActive(true);
+            KnightIcon.SetActive(true);
             myAnimator = Knight.GetComponent<Animator>();
             Ghost.SetActive(false);
+            GhostIcon.SetActive(false);
         }
 
         else if (characterselect == 2)
         {
             Ghost.SetActive(true);
+            GhostIcon.SetActive(true);
             myAnimator = Ghost.GetComponent<Animator>();
             Knight.SetActive(false);
+            KnightIcon.SetActive(false);
         }
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Joystick1Button0) && grounded)
         {
             myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpStrength);
         }
 
 
         //<<<<<<< HEAD
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Joystick1Button1))
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Joystick1Button0))
         {
             if (jumpTimeTracker > 0)
             {
@@ -86,7 +95,7 @@ public class Player_Controller : MonoBehaviour {
 
         }
 
-        if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.Joystick1Button1))
+        if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.Joystick1Button0))
         {
             jumpTimeTracker = 0; 
         }
@@ -97,7 +106,7 @@ public class Player_Controller : MonoBehaviour {
         }
 //=======
 
-        if ((Input.GetKeyDown(KeyCode.DownArrow) || (Input.GetKeyDown(KeyCode.Space)) || Input.GetKeyUp(KeyCode.Joystick1Button0)))
+        if ((Input.GetKeyDown(KeyCode.DownArrow) || (Input.GetKeyDown(KeyCode.Space)) || Input.GetKeyUp(KeyCode.Joystick1Button2)))
         {
             myAnimator.SetBool("ability", true);
             

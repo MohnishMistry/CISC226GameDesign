@@ -8,6 +8,7 @@ public class Ghost_Obstacle_Phasing : MonoBehaviour {
     private Player_Controller controller;
     private Collider2D obstacleCollider;
     private Collider2D playerCollider;
+    public GameManager theGameManager;
 
     // Use this for initialization
     void Start()
@@ -25,11 +26,17 @@ public class Ghost_Obstacle_Phasing : MonoBehaviour {
 
         if (controller.ability == true && controller.characterselect == 2)
         {
-            obstacleCollider.enabled=false;
+            obstacleCollider.enabled= false;
         }
         else if (controller.ability == false)
         {
             obstacleCollider.enabled = true;
         }
+
+        if (Physics2D.IsTouching(obstacleCollider, playerCollider))
+        {
+            controller.death = true;
+        }
+ 
     }
 }

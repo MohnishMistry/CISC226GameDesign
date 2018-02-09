@@ -10,6 +10,7 @@ TagManager:
   - Dummy
   - Large Ghost Wall
   - Small Ghost Wall
+  - killbox
   layers:
   - Default
   - TransparentFX

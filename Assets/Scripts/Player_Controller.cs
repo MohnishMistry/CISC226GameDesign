@@ -9,6 +9,7 @@ public class Player_Controller : MonoBehaviour {
     public bool grounded;
     public bool ability;
     public bool death;
+    public bool falling;
     public LayerMask whatIsGround;
     private bool switchCostumeLeft, switchCostumeRight;
 
@@ -44,6 +45,7 @@ public class Player_Controller : MonoBehaviour {
         jumpTimeTracker = jumpTime;
         switchCostumeLeft = false;
         switchCostumeRight = false;
+        falling = false;
         death = false;
 
     }
@@ -78,7 +80,7 @@ public class Player_Controller : MonoBehaviour {
             KnightIcon.SetActive(false);
         }
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Joystick1Button0) && grounded)
+        if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Joystick1Button0)) && grounded && !falling )
         {
             myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpStrength);
         }
@@ -158,12 +160,23 @@ public class Player_Controller : MonoBehaviour {
 
 	}
 
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
+        if (other.gameObject.tag == "nojumpbox")
+        {
+            falling = true; //Just need to make bool work with jump press
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D other)
     {
+
         if (other.gameObject.tag == "killbox")
         {
-            death = true; 
+            death = true;
+            falling = false;
         }
+
     }
 }
 

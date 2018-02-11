@@ -11,6 +11,7 @@ TagManager:
   - Large Ghost Wall
   - Small Ghost Wall
   - killbox
+  - nojumpbox
   layers:
   - Default
   - TransparentFX

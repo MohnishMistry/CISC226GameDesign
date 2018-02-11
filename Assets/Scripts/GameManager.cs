@@ -12,11 +12,13 @@ public class GameManager : MonoBehaviour {
     public Player_Controller thePlayer;
     private Vector3 playerStartPoint;
 
+    private Score_Manager scoreManager; 
 	// Use this for initialization
 	void Start () {
         backgroundStartPoint = BackgroundGenerator.position;
         platformStartPoint = platformGenerator.position;
         playerStartPoint = thePlayer.transform.position;
+        scoreManager = FindObjectOfType<Score_Manager>(); 
 	}
 	
 	// Update is called once per frame
@@ -31,6 +33,7 @@ public class GameManager : MonoBehaviour {
 
     public IEnumerator RestartGameCo()
     {
+        scoreManager.increasingScore = false; 
         thePlayer.death = false;
         thePlayer.gameObject.SetActive(false);
         yield return new WaitForSeconds(0.5f);
@@ -39,6 +42,9 @@ public class GameManager : MonoBehaviour {
         BackgroundGenerator.position = backgroundStartPoint;
         thePlayer.gameObject.SetActive(true);
         OnDeathClear();
+
+        scoreManager.scoreCounter = 0;
+        scoreManager.increasingScore = true; 
     }
 
     List<GameObject> FindGameObjectsWithLayer(int layer)

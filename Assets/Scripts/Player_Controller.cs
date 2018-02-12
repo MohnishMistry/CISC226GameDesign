@@ -87,7 +87,7 @@ public class Player_Controller : MonoBehaviour {
 
 
         //<<<<<<< HEAD
-        if ((Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Joystick1Button0)) && !falling)
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Joystick1Button0))
         {
             if (jumpTimeTracker > 0)
             {

@@ -1,0 +1,327 @@
+fileFormatVersion: 2
+guid: 553c4bd3c1a03eb47a5df0ca3416da24
+timeCreated: 1520523443
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: robot texture_1
+    21300002: Robot_Head
+    21300004: Robot_right_shoulder
+    21300006: Robot_Body
+    21300008: Robot_Left_Shoulder
+    21300010: Robot_Right_Arm
+    21300012: Robot_Left_Arm
+    21300014: Robot_Right_Hand
+    21300016: Robot_Right_Leg
+    21300018: Robot_left_Hand
+    21300020: Robot_Left_Leg
+    21300022: robot texture_15
+    21300024: Robot_Right_Shin
+    21300026: Robot_Left_Shin
+    21300028: Robot_Right_Foot
+    21300030: Robot_Left_Foot
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: robot texture_1
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1327
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Robot_Head
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1321
+        width: 115
+        height: 135
+      alignment: 9
+      pivot: {x: 0.5125645, y: 0.082588255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Robot_right_shoulder
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1271
+        width: 60
+        height: 36
+      alignment: 9
+      pivot: {x: 0.4036743, y: 0.4197286}
+      border: {x: 0, y: 0, z: 8, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Robot_Body
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1114
+        width: 117
+        height: 186
+      alignment: 9
+      pivot: {x: 0.5123494, y: 0.5155364}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Robot_Left_Shoulder
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 1276
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 4, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Robot_Right_Arm
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 1161
+        width: 95
+        height: 86
+      alignment: 9
+      pivot: {x: 0.4239534, y: 0.8528215}
+      border: {x: 23, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Robot_Left_Arm
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1181
+        width: 93
+        height: 74
+      alignment: 9
+      pivot: {x: 0.422318, y: 0.85145855}
+      border: {x: 22, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Robot_Right_Hand
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 1123
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Robot_Right_Leg
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1071
+        width: 46
+        height: 75
+      alignment: 9
+      pivot: {x: 0.59423167, y: 0.5770605}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Robot_left_Hand
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1140
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Robot_Left_Leg
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 1078
+        width: 46
+        height: 60
+      alignment: 9
+      pivot: {x: 0.40576836, y: 0.7408142}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: robot texture_15
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 1132
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Robot_Right_Shin
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1008
+        width: 42
+        height: 75
+      alignment: 9
+      pivot: {x: 0.50000036, y: 0.8082422}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Robot_Left_Shin
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1019
+        width: 42
+        height: 75
+      alignment: 9
+      pivot: {x: 0.4655987, y: 0.82750815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Robot_Right_Foot
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 985
+        width: 62
+        height: 38
+      alignment: 9
+      pivot: {x: 0.3135632, y: 0.72814137}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Robot_Left_Foot
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 990
+        width: 62
+        height: 38
+      alignment: 9
+      pivot: {x: 0.3135632, y: 0.76616466}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4062514346714240}
   - component: {fileID: 212217846141425182}
+  - component: {fileID: 95300176394212614}
   m_Layer: 0
   m_Name: Robot Floor
   m_TagString: Untagged
@@ -33,13 +34,30 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1281180037851614}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.3815775, y: -2.9848151, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7097734, w: 0.7044301}
+  m_LocalPosition: {x: 1.63, y: -2.76, z: 0}
+  m_LocalScale: {x: 0.5198328, y: 1, z: 0.5198325}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.43301}
+--- !u!95 &95300176394212614
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1281180037851614}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f95368d981fea441aca8a93ee64f975, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &212217846141425182
 SpriteRenderer:
   m_ObjectHideFlags: 1

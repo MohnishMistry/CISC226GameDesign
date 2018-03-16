@@ -34,7 +34,7 @@ public class Obstacle_Generator : MonoBehaviour {
             distanceBetweenMax = platformGeneratorScript.distanceBetweenMax;
             spaceBetweenPlatforms = platformGeneratorScript.distanceBetween;
             platformWidth = platformGeneratorScript.platformWidths[platformGeneratorScript.platformSelector];
-            obstacleDistance = Random.Range(0.33f * platformWidth, 0.66f * platformWidth);
+            obstacleDistance = Random.Range(0.4f * platformWidth, 0.6f * platformWidth);
 
             if (newObstacle.tag == "Thorns")
             {

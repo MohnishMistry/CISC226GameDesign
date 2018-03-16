@@ -13,7 +13,9 @@ public class Obstacle_Generator : MonoBehaviour {
 
     public float obstacleDistance;
     public float platformWidth;
-
+    private float spaceBetweenPlatforms;
+    private float distanceBetweenMin;
+    private float distanceBetweenMax; 
     private Vector3 obstaclePosition; 
     // Use this for initialization
     void Start () {
@@ -26,7 +28,11 @@ public class Obstacle_Generator : MonoBehaviour {
         {
             obstacleSelector = Random.Range(0, obstaclePool.Length);
             GameObject newObstacle = obstaclePool[obstacleSelector].GetPooledObject();
+            
 
+            distanceBetweenMin = platformGeneratorScript.distanceBetweenMin;
+            distanceBetweenMax = platformGeneratorScript.distanceBetweenMax;
+            spaceBetweenPlatforms = platformGeneratorScript.distanceBetween;
             platformWidth = platformGeneratorScript.platformWidths[platformGeneratorScript.platformSelector];
             obstacleDistance = Random.Range(0.33f * platformWidth, 0.66f * platformWidth);
 
@@ -48,6 +54,18 @@ public class Obstacle_Generator : MonoBehaviour {
             {
                 obstaclePosition = new Vector3((transform.position.x + obstacleDistance), transform.position.y-0.55f, transform.position.z); //Move Obstacle Generator to a random distance on the platform
 
+            }
+            else if (newObstacle.tag == "Robot Wall")
+            {
+                obstaclePosition = new Vector3((transform.position.x + obstacleDistance), 3.52f, transform.position.z); //Move Obstacle Generator to a random distance on the platform
+
+            }
+            else if (newObstacle.tag == "Robot Floor")
+            {
+                if ((spaceBetweenPlatforms < distanceBetweenMax) && (spaceBetweenPlatforms > 2) && Random.value >= 0.1)
+                    obstaclePosition = new Vector3((transform.position.x - 2), -2.736f, transform.position.z); //Move Obstacle Generator to a random distance on the platform
+                else
+                    return; 
             }
 
             newObstacle.transform.position = obstaclePosition; 

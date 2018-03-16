@@ -39,9 +39,10 @@ GameObject:
   - component: {fileID: 212599754093385088}
   - component: {fileID: 95154087627974754}
   - component: {fileID: 61321143813289808}
+  - component: {fileID: 114968893560040404}
   m_Layer: 10
   m_Name: Robot Wall
-  m_TagString: Untagged
+  m_TagString: Robot Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,7 +86,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0055085123, y: -0.038559318}
+  m_Offset: {x: 0.013503209, y: -1.4732771}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -96,7 +97,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.82491523, y: 3.7486427}
+  m_Size: {x: 0.8002174, y: 6.618079}
   m_EdgeRadius: 0
 --- !u!61 &61357479012053758
 BoxCollider2D:
@@ -130,7 +131,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1972078493431534}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 1b34290171856ea47885442f783c313f, type: 2}
   m_CullingMode: 0
@@ -140,6 +141,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114968893560040404
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1972078493431534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe183c7a2fd24014db23021813c2db2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformDestructionPoint: {fileID: 0}
+  player: {fileID: 0}
 --- !u!212 &212373435314346068
 SpriteRenderer:
   m_ObjectHideFlags: 1

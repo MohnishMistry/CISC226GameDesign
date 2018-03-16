@@ -12,6 +12,9 @@ TagManager:
   - Small Ghost Wall
   - killbox
   - nojumpbox
+  - Undefined
+  - Robot Floor
+  - Robot Wall
   layers:
   - Default
   - TransparentFX

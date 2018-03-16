@@ -603,6 +603,8 @@ Transform:
   - {fileID: 1220588982}
   - {fileID: 630284549}
   - {fileID: 1424850584}
+  - {fileID: 1914932931}
+  - {fileID: 1159053892}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -776,8 +778,8 @@ RectTransform:
   - {fileID: 1103799640}
   - {fileID: 986440906}
   - {fileID: 1282434377}
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 1339358062}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1195,6 +1197,8 @@ MonoBehaviour:
   - {fileID: 1220588983}
   - {fileID: 630284550}
   - {fileID: 1424850585}
+  - {fileID: 1914932932}
+  - {fileID: 1159053891}
   obstacleSelector: 0
   obstacleDistance: 0
   platformWidth: 0
@@ -1253,7 +1257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pooledObject: {fileID: 1136159002672264, guid: ff33121218a584546b3a62f1b769f708,
     type: 2}
-  pooledAmount: 5
+  pooledAmount: 3
 --- !u!1 &636018369
 GameObject:
   m_ObjectHideFlags: 0
@@ -2218,7 +2222,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pooledObject: {fileID: 1858888330623812, guid: 1e8694cb0d14a1640a5e3108511fb2db,
     type: 2}
-  pooledAmount: 0
+  pooledAmount: 3
+--- !u!1 &1159053890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1159053892}
+  - component: {fileID: 1159053891}
+  m_Layer: 0
+  m_Name: Robot Wall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1159053891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1159053890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63026bb6a9c04a644a3c58ab97d1ad13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObject: {fileID: 1972078493431534, guid: 2b301fb5d225d0d40aa3fbbdfd901e80,
+    type: 2}
+  pooledAmount: 3
+--- !u!4 &1159053892
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1159053890}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231953591}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1177558446
 Prefab:
   m_ObjectHideFlags: 0
@@ -2391,7 +2438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pooledObject: {fileID: 1597713958119274, guid: 2757d1eb465534b4c8e9826a7e93afb4,
     type: 2}
-  pooledAmount: 0
+  pooledAmount: 3
 --- !u!1 &1239223551
 GameObject:
   m_ObjectHideFlags: 0
@@ -2447,12 +2494,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1239223551}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -393, y: -243.00002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 1339358062}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1282434376
 GameObject:
@@ -2593,8 +2640,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   generationPoint: {fileID: 1929280041}
   distanceBetween: 0
-  distanceBetweenMin: 1
-  distanceBetweenMax: 2
+  distanceBetweenMin: 1.5
+  distanceBetweenMax: 2.5
   platformSelector: 0
   platformWidths: []
   objectsPool:
@@ -2622,6 +2669,41 @@ Transform:
   m_PrefabParentObject: {fileID: 4261695207934394, guid: b89e9d707defcfe4bbcaf00f7aa0e3d2,
     type: 2}
   m_PrefabInternal: {fileID: 393206430}
+--- !u!1 &1339358061
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1339358062}
+  m_Layer: 5
+  m_Name: Score Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1339358062
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1339358061}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 381284870}
+  - {fileID: 1239223554}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 393, y: 243.00002}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1341878184
 GameObject:
   m_ObjectHideFlags: 0
@@ -3209,7 +3291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pooledObject: {fileID: 1467959057249150, guid: dda1e85e6ca566c46a45f4ddc6b975f5,
     type: 2}
-  pooledAmount: 5
+  pooledAmount: 3
 --- !u!4 &1431255453 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4412407345834938, guid: ba127c6417cafc94487ae5f70d165a14,
@@ -4121,6 +4203,49 @@ Transform:
   m_PrefabParentObject: {fileID: 4833057992543830, guid: 77ee9ee8db377ab458c9ded75a7f6a42,
     type: 2}
   m_PrefabInternal: {fileID: 1518106646}
+--- !u!1 &1914932930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1914932931}
+  - component: {fileID: 1914932932}
+  m_Layer: 0
+  m_Name: Robot Floor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1914932931
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1914932930}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231953591}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1914932932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1914932930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63026bb6a9c04a644a3c58ab97d1ad13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObject: {fileID: 1281180037851614, guid: 42cb04cbb21f7b54e9743004da2db01e,
+    type: 2}
+  pooledAmount: 3
 --- !u!1 &1929280040
 GameObject:
   m_ObjectHideFlags: 0

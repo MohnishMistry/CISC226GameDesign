@@ -1,0 +1,297 @@
+fileFormatVersion: 2
+guid: 9461ac2f310fe024eb3c3538bbbfa715
+timeCreated: 1520899315
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: wizard_head
+    21300002: wizard _right_shoulder
+    21300004: wizard_body
+    21300006: wizard_left_shoulder
+    21300008: wizard_right_forearm
+    21300010: wizard_right_hand
+    21300012: wizard_left_forearm
+    21300014: wizard_wand
+    21300016: wizard texture_9
+    21300018: wizard_back
+    21300020: wizard_rtight_leg
+    21300022: wizard_left_leg
+    21300024: wizard_right_foot
+    21300026: wizard_left_foot
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wizard_head
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1332
+        width: 114
+        height: 168
+      alignment: 9
+      pivot: {x: 0.6344615, y: 0.24623398}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard _right_shoulder
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 1309
+        width: 42
+        height: 105
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8725516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_body
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 1068
+        width: 136
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_left_shoulder
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 1229
+        width: 46
+        height: 104
+      alignment: 9
+      pivot: {x: 0.42933986, y: 0.88285357}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_right_forearm
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1207
+        width: 71
+        height: 52
+      alignment: 9
+      pivot: {x: 0.106459714, y: 0.7820998}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_right_hand
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1207
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_left_forearm
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 1173
+        width: 82
+        height: 47
+      alignment: 9
+      pivot: {x: 0.13334395, y: 0.5691567}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_wand
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 961
+        width: 168
+        height: 245
+      alignment: 9
+      pivot: {x: 0.3764416, y: 0.40650958}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard texture_9
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 1119
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_back
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 988
+        width: 54
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_rtight_leg
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 1018
+        width: 40
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8694386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_left_leg
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 1020
+        width: 42
+        height: 97
+      alignment: 9
+      pivot: {x: 0.48295665, y: 0.8837211}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_right_foot
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 972
+        width: 48
+        height: 25
+      alignment: 9
+      pivot: {x: 0.26140466, y: 0.7290527}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_left_foot
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 975
+        width: 53
+        height: 28
+      alignment: 9
+      pivot: {x: 0.21638575, y: 0.7300742}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

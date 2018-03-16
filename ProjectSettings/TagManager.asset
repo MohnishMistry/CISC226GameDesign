@@ -12,6 +12,7 @@ TagManager:
   - Small Ghost Wall
   - killbox
   - nojumpbox
+  - Robot Costume
   layers:
   - Default
   - TransparentFX

@@ -23,8 +23,10 @@ public class Player_Controller : MonoBehaviour {
     public float jumpTime;
     private float jumpTimeTracker; 
 
-    GameObject Knight, Ghost, KnightIcon, GhostIcon;
+    GameObject Knight, Ghost, Robot, KnightIcon, GhostIcon, RobotIcon;
+    public GameObject[] objList;
     public int characterselect;
+    public int CHMAX = 3;
 
 
 
@@ -32,8 +34,11 @@ public class Player_Controller : MonoBehaviour {
 	void Start () {
         Knight = GameObject.Find("Knight Costume");
         Ghost = GameObject.Find("Ghost Costume");
+        Robot = GameObject.Find("Robot Costume");
         KnightIcon = GameObject.Find("Knight Icon");
         GhostIcon = GameObject.Find("Ghost Icon");
+        RobotIcon = GameObject.Find("Robot Icon");
+        objList = new GameObject[] {Knight, Ghost, Robot, KnightIcon, GhostIcon, RobotIcon};
         myRigidBody = GetComponent<Rigidbody2D>();
         myCollider = GetComponent<Collider2D>();
 
@@ -42,6 +47,7 @@ public class Player_Controller : MonoBehaviour {
         characterselect = 1;
         KnightIcon.SetActive(true);
         GhostIcon.SetActive(false);
+        RobotIcon.SetActive(false);
         jumpTimeTracker = jumpTime;
         switchCostumeLeft = false;
         switchCostumeRight = false;
@@ -62,23 +68,20 @@ public class Player_Controller : MonoBehaviour {
             theGameManager.RestartGame();
         }
 
-        if (characterselect == 1)
-        {
-            Knight.SetActive(true);
-            KnightIcon.SetActive(true);
-            myAnimator = Knight.GetComponent<Animator>();
-            Ghost.SetActive(false);
-            GhostIcon.SetActive(false);
-        }
 
-        else if (characterselect == 2)
+        for (int i = 0; i < CHMAX * 2; i++)
         {
-            Ghost.SetActive(true);
-            GhostIcon.SetActive(true);
-            myAnimator = Ghost.GetComponent<Animator>();
-            Knight.SetActive(false);
-            KnightIcon.SetActive(false);
+            if (i != characterselect - 1 && i != characterselect + CHMAX - 1)
+            {
+                objList[i].SetActive(false);
+            }
+            else
+            {
+                objList[i].SetActive(true);
+            }
         }
+        myAnimator = objList[characterselect-1].GetComponent<Animator>();
+        
 
         if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Joystick1Button0)) && grounded && !falling )
         {
@@ -126,7 +129,7 @@ public class Player_Controller : MonoBehaviour {
                 switchCostumeRight = true;
             }
 
-            else if ( characterselect == 2)
+            else if ( characterselect == CHMAX)
             {
                 characterselect = 1;
                 switchCostumeRight = false;
@@ -148,7 +151,7 @@ public class Player_Controller : MonoBehaviour {
 
             else if (characterselect == 1)
             {
-                characterselect = 2;
+                characterselect = CHMAX;
                 switchCostumeLeft = false;
             }
             else
@@ -159,6 +162,7 @@ public class Player_Controller : MonoBehaviour {
         }
 
 	}
+
 
     private void OnTriggerEnter2D(Collider2D other) 
     {

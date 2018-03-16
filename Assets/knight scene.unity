@@ -855,6 +855,70 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1382612492702340, guid: b89e9d707defcfe4bbcaf00f7aa0e3d2, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391706375154594, guid: b89e9d707defcfe4bbcaf00f7aa0e3d2, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197537540547306, guid: b89e9d707defcfe4bbcaf00f7aa0e3d2, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1126459061397072, guid: b89e9d707defcfe4bbcaf00f7aa0e3d2, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365828686824720, guid: b89e9d707defcfe4bbcaf00f7aa0e3d2, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1543307155385302, guid: b89e9d707defcfe4bbcaf00f7aa0e3d2, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460499895395500, guid: b89e9d707defcfe4bbcaf00f7aa0e3d2, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1263666716394408, guid: b89e9d707defcfe4bbcaf00f7aa0e3d2, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930917501333650, guid: b89e9d707defcfe4bbcaf00f7aa0e3d2, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1917437505465070, guid: b89e9d707defcfe4bbcaf00f7aa0e3d2, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1594591891565384, guid: b89e9d707defcfe4bbcaf00f7aa0e3d2, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824768988969698, guid: b89e9d707defcfe4bbcaf00f7aa0e3d2, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651572139419830, guid: b89e9d707defcfe4bbcaf00f7aa0e3d2, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1147888794415514, guid: b89e9d707defcfe4bbcaf00f7aa0e3d2, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1741263533523586, guid: b89e9d707defcfe4bbcaf00f7aa0e3d2, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1263666716394408, guid: b89e9d707defcfe4bbcaf00f7aa0e3d2, type: 2}
+      propertyPath: m_TagString
+      value: Robot Costume
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b89e9d707defcfe4bbcaf00f7aa0e3d2, type: 2}
   m_IsPrefabParent: 0
@@ -1359,6 +1423,7 @@ MonoBehaviour:
   theGameManager: {fileID: 1730228362}
   jumpTime: 0.15
   characterselect: 1
+  characterMax: 3
 --- !u!50 &700929748
 Rigidbody2D:
   serializedVersion: 4

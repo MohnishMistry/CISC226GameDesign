@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; 
 
-public class Score_Manager : MonoBehaviour {
+public class ScoreManager : MonoBehaviour {
 
     public Text scoreText;
     public Text highScoreText;
@@ -38,5 +38,10 @@ public class Score_Manager : MonoBehaviour {
         highScoreText.text = "HighScore: " + Mathf.Round(highScoreCounter);
               
 
+    }
+
+    public void AddPoints(int pointsToAdd)
+    {
+        scoreCounter += pointsToAdd; 
     }
 }

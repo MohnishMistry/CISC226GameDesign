@@ -17,6 +17,7 @@ public class Platform_Generator : MonoBehaviour {
     private Obstacle_Generator obstacleGeneratorScript;
     public GameObject obstacleGenerator;
 
+    public Candy_Collection candyCollector; 
     // Use this for initialization
     void Start () {
         platformWidths = new float[objectsPool.Length];
@@ -48,7 +49,14 @@ public class Platform_Generator : MonoBehaviour {
             if (platformWidths[platformSelector] > 3)
             {
                 obstacleGeneratorScript.Spawn();
-            } 
+            }
+            else
+            {
+                if(Random.value > 0.5)
+                {
+                    candyCollector.SpawnCandy(transform.position);
+                }
+            }
 
             transform.position = new Vector3((transform.position.x + (platformWidths[platformSelector])), transform.position.y, transform.position.z);
 

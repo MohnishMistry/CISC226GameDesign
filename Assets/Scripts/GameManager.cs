@@ -12,13 +12,13 @@ public class GameManager : MonoBehaviour {
     public Player_Controller thePlayer;
     private Vector3 playerStartPoint;
 
-    private Score_Manager scoreManager; 
+    private ScoreManager scoreManager; 
 	// Use this for initialization
 	void Start () {
         backgroundStartPoint = BackgroundGenerator.position;
         platformStartPoint = platformGenerator.position;
         playerStartPoint = thePlayer.transform.position;
-        scoreManager = FindObjectOfType<Score_Manager>(); 
+        scoreManager = FindObjectOfType<ScoreManager>(); 
 	}
 	
 	// Update is called once per frame

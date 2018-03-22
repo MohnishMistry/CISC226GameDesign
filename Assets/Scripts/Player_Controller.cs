@@ -89,7 +89,6 @@ public class Player_Controller : MonoBehaviour {
         }
 
 
-        //<<<<<<< HEAD
         if ((Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Joystick1Button0)) && !falling)
         {
             if (jumpTimeTracker > 0)
@@ -109,7 +108,6 @@ public class Player_Controller : MonoBehaviour {
         {
             jumpTimeTracker = jumpTime; 
         }
-//=======
 
         if ((Input.GetKeyDown(KeyCode.DownArrow) || (Input.GetKeyDown(KeyCode.Space)) || Input.GetKeyUp(KeyCode.Joystick1Button2)))
         {
@@ -117,9 +115,6 @@ public class Player_Controller : MonoBehaviour {
             
         }
 
-
-
-//>>>>>>> Ghost-Texture
         myAnimator.SetBool("grounded", grounded);
 
         if (Input.GetKeyDown(KeyCode.RightArrow) || switchCostumeRight== true || Input.GetKeyUp(KeyCode.Joystick1Button5))

@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour {
     public Player_Controller thePlayer;
     private Vector3 playerStartPoint;
 
-    private ScoreManager scoreManager; 
+    private ScoreManager scoreManager;
 	// Use this for initialization
 	void Start () {
         backgroundStartPoint = BackgroundGenerator.position;
@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour {
         OnDeathClear();
 
         scoreManager.scoreCounter = 0;
-        scoreManager.increasingScore = true; 
+        scoreManager.increasingScore = true;
     }
 
     List<GameObject> FindGameObjectsWithLayer(int layer)

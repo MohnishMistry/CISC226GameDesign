@@ -52,10 +52,7 @@ public class Platform_Generator : MonoBehaviour {
             }
             else
             {
-                if(Random.value > 0.5)
-                {
-                    candyCollector.SpawnCandy(transform.position);
-                }
+                candyCollector.SpawnCandy(transform.position);
             }
 
             transform.position = new Vector3((transform.position.x + (platformWidths[platformSelector])), transform.position.y, transform.position.z);

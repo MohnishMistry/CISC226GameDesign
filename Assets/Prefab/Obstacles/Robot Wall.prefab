@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 4425296579316588}
   - component: {fileID: 212599754093385088}
   - component: {fileID: 61321143813289808}
+  - component: {fileID: 114784979076658446}
   m_Layer: 10
   m_Name: Robot Wall
   m_TagString: Robot Wall
@@ -168,6 +169,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   theGameManager: {fileID: 0}
+--- !u!114 &114784979076658446
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1972078493431534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe183c7a2fd24014db23021813c2db2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformDestructionPoint: {fileID: 0}
+  player: {fileID: 0}
 --- !u!212 &212373435314346068
 SpriteRenderer:
   m_ObjectHideFlags: 1

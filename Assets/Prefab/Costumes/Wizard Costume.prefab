@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4849060708065836}
   - component: {fileID: 212690185456188376}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wizard_right_hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4251282481690166}
   - component: {fileID: 212325349470239130}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: wizard_head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +52,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4676708617982592}
   - component: {fileID: 212408817744831212}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wizard_left_leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4723355375978116}
   - component: {fileID: 212442902344834796}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wizard _right_shoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4470709176078710}
   - component: {fileID: 212497938496291336}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wizard_left_shoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4255269697529350}
   - component: {fileID: 212548750189809128}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wizard_wand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4232577982581180}
   - component: {fileID: 212426224611271974}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wizard_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4668380405830462}
   - component: {fileID: 95345596252775086}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wizard Costume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4238025612293532}
   - component: {fileID: 212383967998293836}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wizard_left_foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4262393676494654}
   - component: {fileID: 212699778784085576}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wizard_left_forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4220299676123416}
   - component: {fileID: 212989608289468820}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wizard_right_forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4162472454485584}
   - component: {fileID: 212974284941331638}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wizard_back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4568134229484510}
   - component: {fileID: 212519820973749660}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wizard_rtight_leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,7 +228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4831954227162770}
   - component: {fileID: 212442184349271198}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wizard_right_foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

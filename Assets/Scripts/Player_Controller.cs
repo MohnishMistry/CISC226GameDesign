@@ -23,10 +23,10 @@ public class Player_Controller : MonoBehaviour {
     public float jumpTime;
     private float jumpTimeTracker; 
 
-    GameObject Knight, Ghost, Robot, KnightIcon, GhostIcon, RobotIcon;
+    GameObject Knight, Ghost, Robot, Wizard, KnightIcon, GhostIcon, RobotIcon, WizardIcon;
     public GameObject[] objList;
     public int characterselect;
-    public int CHMAX = 3;
+    public int CHMAX = 4;
 
 
 
@@ -35,10 +35,12 @@ public class Player_Controller : MonoBehaviour {
         Knight = GameObject.Find("Knight Costume");
         Ghost = GameObject.Find("Ghost Costume");
         Robot = GameObject.Find("Robot Costume");
+        Wizard = GameObject.Find("Wizard Costume");
         KnightIcon = GameObject.Find("Knight Icon");
         GhostIcon = GameObject.Find("Ghost Icon");
         RobotIcon = GameObject.Find("Robot Icon");
-        objList = new GameObject[] {Knight, Ghost, Robot, KnightIcon, GhostIcon, RobotIcon};
+        WizardIcon = GameObject.Find("Wizard Icon");
+        objList = new GameObject[] {Knight, Ghost, Robot, Wizard, KnightIcon, GhostIcon, RobotIcon, WizardIcon};
         myRigidBody = GetComponent<Rigidbody2D>();
         myCollider = GetComponent<Collider2D>();
 
@@ -48,6 +50,7 @@ public class Player_Controller : MonoBehaviour {
         KnightIcon.SetActive(true);
         GhostIcon.SetActive(false);
         RobotIcon.SetActive(false);
+        WizardIcon.SetActive(false);
         jumpTimeTracker = jumpTime;
         switchCostumeLeft = false;
         switchCostumeRight = false;

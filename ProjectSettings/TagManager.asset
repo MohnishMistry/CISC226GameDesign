@@ -15,6 +15,7 @@ TagManager:
   - Undefined
   - Robot Floor
   - Robot Wall
+  - Projectile
   layers:
   - Default
   - TransparentFX

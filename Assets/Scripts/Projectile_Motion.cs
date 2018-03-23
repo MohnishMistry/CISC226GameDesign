@@ -9,6 +9,7 @@ public class Projectile_Motion : MonoBehaviour {
     // Use this for initialization
     void Start () {
         player = GameObject.Find("Player");
+        gameObject.SetActive(false);
     }
 	
 	// Update is called once per frame

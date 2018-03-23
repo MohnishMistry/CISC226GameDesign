@@ -69,6 +69,14 @@ public class Obstacle_Generator : MonoBehaviour {
                 else
                     return;
             }
+            else if (newObstacle.tag == "Troll")
+            {
+                obstaclePosition = new Vector3((transform.position.x + obstacleDistance), -0.2f, transform.position.z); //Move Obstacle Generator to a random distance on the platform
+            }
+            else if (newObstacle.tag == "Wolf")
+            {
+                obstaclePosition = new Vector3((transform.position.x + obstacleDistance), 0, transform.position.z); //Move Obstacle Generator to a random distance on the platform
+            }
 
             newObstacle.transform.position = obstaclePosition;
             newObstacle.SetActiveRecursively(true);

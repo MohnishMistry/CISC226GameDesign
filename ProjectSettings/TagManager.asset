@@ -16,6 +16,8 @@ TagManager:
   - Robot Floor
   - Robot Wall
   - Projectile
+  - Troll
+  - Wolf
   layers:
   - Default
   - TransparentFX

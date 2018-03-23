@@ -9,12 +9,14 @@ public class Knight_Obstacle_Destroyer : MonoBehaviour {
     private Collider2D playerCollider;
     public GameManager theGameManager;
 
+    public AudioSource swordSwingingSound; 
     // Use this for initialization
     void Start () {
         player = GameObject.Find("Player");
         controller = player.GetComponent<Player_Controller>();
         obstacleCollider = GetComponent<Collider2D>();
         playerCollider = player.GetComponent<Collider2D>();
+        swordSwingingSound = GameObject.Find("SwordSwingingSound").GetComponent<AudioSource>(); 
 
     }
 	
@@ -25,6 +27,7 @@ public class Knight_Obstacle_Destroyer : MonoBehaviour {
         {
             if (controller.characterselect == 1 && controller.ability == true )
             {
+                swordSwingingSound.Play(); 
                 gameObject.SetActive(false);
             }
             else

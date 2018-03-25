@@ -470,6 +470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformDestructionPoint: {fileID: 0}
+  player: {fileID: 0}
 --- !u!212 &212094302008475944
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -1342,10 +1342,10 @@ MonoBehaviour:
   obstaclePool:
   - {fileID: 1151049254}
   - {fileID: 1220588983}
-  - {fileID: 630284550}
   - {fileID: 1424850585}
-  - {fileID: 811009252}
+  - {fileID: 630284550}
   - {fileID: 1983074192}
+  - {fileID: 811009252}
   - {fileID: 1920668267}
   - {fileID: 600646086}
   obstacleSelector: 0
@@ -1481,7 +1481,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.41479158, y: -0.37159073}
+  m_Offset: {x: -0.41479158, y: -0.3101195}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1492,7 +1492,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6486902, y: 1.9592478}
+  m_Size: {x: 0.6486902, y: 1.8363054}
   m_EdgeRadius: 0
 --- !u!114 &700929747
 MonoBehaviour:

@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 95403889111018086}
   m_Layer: 10
   m_Name: Robot_wall
-  m_TagString: Untagged
+  m_TagString: Robot Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

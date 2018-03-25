@@ -22,7 +22,6 @@ public class Wizard_Obstacle_Destroyer : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D obj)
     {
-        Debug.Log("Entered Function");
         if (obj.gameObject.tag == "Projectile")
         {
             gameObject.SetActive(false);

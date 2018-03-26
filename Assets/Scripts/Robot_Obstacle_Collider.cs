@@ -41,9 +41,9 @@ public class Robot_Obstacle_Collider : MonoBehaviour
         if (gameObject.tag == "Robot Floor")
         {
              if (controller.characterselect == 3 && controller.ability == true)
-            {
+             {
                 animator.SetBool("start", true);
-            }
+             }
         }
 
 

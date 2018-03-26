@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 212217846141425182}
   - component: {fileID: 95300176394212614}
   - component: {fileID: 114545730198698540}
-  - component: {fileID: 61397218336706736}
   - component: {fileID: 114023473776562582}
+  - component: {fileID: 68920834464595066}
   m_Layer: 10
   m_Name: Robot Floor
   m_TagString: Robot Floor
@@ -44,8 +44,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.43301}
---- !u!61 &61397218336706736
-BoxCollider2D:
+--- !u!68 &68920834464595066
+EdgeCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -56,19 +56,11 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.5677904, y: -0.3710717}
-  m_SpriteTilingProperty:
-    border: {x: 0.08, y: 0.03, z: 0, w: 0.07}
-    pivot: {x: 0.9770988, y: 0.8056165}
-    oldSize: {x: 4.09, y: 0.77}
-    newSize: {x: 4.09, y: 0.77}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.322912, y: 0.41563413}
+  m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: -3.9963348, y: -0.23532474}
+  - {x: 0.07972549, y: 0.03386784}
 --- !u!95 &95300176394212614
 Animator:
   serializedVersion: 3
@@ -145,7 +137,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_Sprite: {fileID: 21300018, guid: 5bfe0b1f84969cd47861f5640bc0bc34, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

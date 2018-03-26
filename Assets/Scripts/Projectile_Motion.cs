@@ -16,7 +16,7 @@ public class Projectile_Motion : MonoBehaviour {
 	void Update () {
         gameObject.transform.Translate(10*Time.deltaTime,0,0);
 
-        if (gameObject.transform.position.x - player.transform.position.x > 20)
+        if (gameObject.transform.position.x - player.transform.position.x > 15)
         {
             gameObject.SetActive(false);
         }

@@ -28,7 +28,7 @@ public class Player_Controller : MonoBehaviour {
     public int characterselect;
     public int CHMAX = 4;
 
-
+    public Vector3 startingPosition; 
 
 	// Use this for initialization
 	void Start () {
@@ -56,7 +56,7 @@ public class Player_Controller : MonoBehaviour {
         switchCostumeRight = false;
         falling = false;
         death = false;
-
+        startingPosition = transform.position; 
     }
 	
 	// Update is called once per frame

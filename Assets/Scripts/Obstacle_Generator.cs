@@ -8,6 +8,7 @@ public class Obstacle_Generator : MonoBehaviour {
     public GameObject platformGenerator;
     private Platform_Generator platformGeneratorScript;
     public Object_Pooler[] obstaclePool;
+    public Object_Pooler[] costumePool;
     public int obstacleSelector;
 
 
@@ -87,6 +88,14 @@ public class Obstacle_Generator : MonoBehaviour {
             newObstacle.SetActiveRecursively(true);
             
         }
+    }
+
+    public void SpawnCostume()
+    {
+        GameObject newCostume = costumePool[0].GetPooledObject();
+        obstaclePosition = new Vector3((transform.position.x + obstacleDistance), transform.position.y, transform.position.z); //Move Obstacle Generator to a random distance on the platform            }
+        newCostume.transform.position = obstaclePosition;
+        newCostume.SetActiveRecursively(true);
     }
 
 }

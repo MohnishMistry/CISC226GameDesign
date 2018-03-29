@@ -13,16 +13,18 @@ public class GameManager : MonoBehaviour {
     private Vector3 playerStartPoint;
 
     private ScoreManager scoreManager;
+    public Platform_Generator platformGeneratorObject; 
 	// Use this for initialization
 	void Start () {
         backgroundStartPoint = BackgroundGenerator.position;
         platformStartPoint = platformGenerator.position;
         playerStartPoint = thePlayer.transform.position;
-        scoreManager = FindObjectOfType<ScoreManager>(); 
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        scoreManager = FindObjectOfType<ScoreManager>();
+        platformGeneratorObject = FindObjectOfType<Platform_Generator>();
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 
@@ -45,6 +47,7 @@ public class GameManager : MonoBehaviour {
 
         scoreManager.scoreCounter = 0;
         scoreManager.increasingScore = true;
+        platformGeneratorObject.spawnedCostume = false; 
     }
 
     List<GameObject> FindGameObjectsWithLayer(int layer)

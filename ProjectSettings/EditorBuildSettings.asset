@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/knight scene.unity
     guid: 8e0bc5de9f4254e458de58618597fb36
+  - enabled: 1
+    path: Assets/Three Costumes.unity
+    guid: 1ecf3ea976f56304989a5cd2db15d795

@@ -17,7 +17,11 @@ public class Platform_Generator : MonoBehaviour {
     private Obstacle_Generator obstacleGeneratorScript;
     public GameObject obstacleGenerator;
 
-    public Candy_Collection candyCollector; 
+    public Candy_Collection candyCollector;
+    public Player_Controller playerController;
+
+    public bool spawnedCostume = false; 
+
     // Use this for initialization
     void Start () {
         platformWidths = new float[objectsPool.Length];
@@ -46,7 +50,12 @@ public class Platform_Generator : MonoBehaviour {
 
             newPlatform.SetActiveRecursively(true);
 
-            if (platformWidths[platformSelector] > 3)
+            if (transform.position.x - playerController.startingPosition.x > 50 && spawnedCostume == false)
+            {
+                obstacleGeneratorScript.SpawnCostume();
+                spawnedCostume = true; 
+            }
+            else if (platformWidths[platformSelector] > 3)
             {
                 obstacleGeneratorScript.Spawn();
             }
@@ -56,7 +65,6 @@ public class Platform_Generator : MonoBehaviour {
             }
 
             transform.position = new Vector3((transform.position.x + (platformWidths[platformSelector])), transform.position.y, transform.position.z);
-
         }
     }
 }

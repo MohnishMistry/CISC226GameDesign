@@ -71,7 +71,12 @@ public class Obstacle_Generator : MonoBehaviour {
             }
             else if (newObstacle.tag == "Troll")
             {
-                obstaclePosition = new Vector3((transform.position.x + obstacleDistance), -0.2f, transform.position.z); //Move Obstacle Generator to a random distance on the platform
+                if (platformWidth > 6)
+                {
+                    obstaclePosition = new Vector3((transform.position.x + obstacleDistance), -0.2f, transform.position.z); //Move Obstacle Generator to a random distance on the platform
+                }
+                else
+                    return; 
             }
             else if (newObstacle.tag == "Wolf")
             {

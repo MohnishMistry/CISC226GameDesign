@@ -66,10 +66,10 @@ public class Player_Controller : MonoBehaviour {
         myAnimator.SetBool("grounded", grounded);
         ability = myAnimator.GetBool("ability");
 
-        if (death == true)
-        {
-            theGameManager.RestartGame();
-        }
+        //if (death == true)
+        //{
+        //    theGameManager.RestartGame();
+        //}
 
 
         for (int i = 0; i < CHMAX * 2; i++)

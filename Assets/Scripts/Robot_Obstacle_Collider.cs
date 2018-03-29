@@ -43,10 +43,7 @@ public class Robot_Obstacle_Collider : MonoBehaviour
              if (controller.characterselect == 3 && controller.ability == true)
              {
                 animator.SetBool("start", true);
-             }
+            }
         }
-
-
-
     }
 }

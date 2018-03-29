@@ -689,7 +689,8 @@ Prefab:
       propertyPath: m_Name
       value: Start Background
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114197546594310198, guid: 77ee9ee8db377ab458c9ded75a7f6a42, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 77ee9ee8db377ab458c9ded75a7f6a42, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &454708590 stripped
@@ -1250,7 +1251,8 @@ Prefab:
       propertyPath: m_Name
       value: Start Background
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114197546594310198, guid: 77ee9ee8db377ab458c9ded75a7f6a42, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 77ee9ee8db377ab458c9ded75a7f6a42, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1117587732 stripped

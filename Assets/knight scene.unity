@@ -2123,6 +2123,7 @@ MonoBehaviour:
   player: {fileID: 0}
   DeathUI: {fileID: 738396059}
   Controller: {fileID: 0}
+  theGameManager: {fileID: 1730228362}
 --- !u!1 &668298371
 GameObject:
   m_ObjectHideFlags: 0

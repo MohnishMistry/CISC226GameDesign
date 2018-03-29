@@ -9,6 +9,7 @@ public class DeathScript : MonoBehaviour
     public GameObject DeathUI;
     public Player_Controller Controller;
 
+    public GameManager theGameManager; 
     void Start()
     {
         DeathUI.SetActive(false);
@@ -34,7 +35,8 @@ public class DeathScript : MonoBehaviour
     {
         DeathUI.SetActive(false);
         Time.timeScale = 1;
-        SceneManager.LoadScene(newGame);
+        //SceneManager.LoadScene(newGame);
+        theGameManager.RestartGame(); 
     }
 
     public void Quit()

@@ -22,14 +22,27 @@ public class Send_Projectile : MonoBehaviour {
 	void Update () {
         if (controller.characterselect == 4 && controller.ability == true && projectileNew.activeSelf == false)
         {
-            Spawn_Projectile(player.transform.position);
+            StartCoroutine(Delay());
         }
     }
 
     void Spawn_Projectile (Vector3 position)
     {
-        Vector3 newPosition = new Vector3 (position.x, position.y-0.5f, position.z);
+        Vector3 newPosition = new Vector3 (position.x+0.5f, position.y-0.5f, position.z);
         projectileNew.transform.position = newPosition;
+    }
+
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(0.25f);
+        Spawn_Projectile(player.transform.position);
+        StartCoroutine(DelayView()); 
+    }
+
+    IEnumerator DelayView()
+    {
+        yield return new WaitForSeconds(0.35f);
         projectileNew.SetActive(true);
     }
+
 }

@@ -25,7 +25,6 @@ public class Wizard_Obstacle_Destroyer : MonoBehaviour
         if (obj.gameObject.tag == "Projectile")
         {
             gameObject.SetActive(false);
-            obj.gameObject.SetActive(false);
         }
     }
 

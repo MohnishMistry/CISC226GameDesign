@@ -35,7 +35,6 @@ public class DeathScript : MonoBehaviour
     {
         DeathUI.SetActive(false);
         Time.timeScale = 1;
-        //SceneManager.LoadScene(newGame);
         theGameManager.RestartGame(); 
     }
 

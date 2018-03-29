@@ -9,6 +9,7 @@ public class PauseScript : MonoBehaviour {
     public GameObject PauseUI;
     public GameObject player;
     public Player_Controller Controller;
+    public GameManager theGameManager;
 
     void Start()
     {
@@ -48,10 +49,10 @@ public class PauseScript : MonoBehaviour {
 
     public void Restart(string newGame)
     {
-        SceneManager.LoadScene(newGame);
         PauseUI.SetActive(false);
         Time.timeScale = 1;
         GamePaused = false;
+        theGameManager.RestartGame();
     }
 
     public void Quit()

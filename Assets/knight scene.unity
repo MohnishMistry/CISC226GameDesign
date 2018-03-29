@@ -909,6 +909,7 @@ MonoBehaviour:
   PauseUI: {fileID: 2131553229}
   player: {fileID: 0}
   Controller: {fileID: 0}
+  theGameManager: {fileID: 1730228362}
 --- !u!1 &328891637
 GameObject:
   m_ObjectHideFlags: 0

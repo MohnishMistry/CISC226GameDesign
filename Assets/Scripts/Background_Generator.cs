@@ -22,7 +22,7 @@ public class Background_Generator : MonoBehaviour {
             backgroundSelector = Random.Range(0, obstaclePool.Length);
             GameObject newBackground = obstaclePool[backgroundSelector].GetPooledObject();
 
-            transform.position = new Vector3(transform.position.x + backgroundWidth, transform.position.y, transform.position.z);
+            transform.position = new Vector3(transform.position.x + backgroundWidth, 0.15f, transform.position.z);
 
             newBackground.transform.position = transform.position;
             newBackground.SetActive(true);

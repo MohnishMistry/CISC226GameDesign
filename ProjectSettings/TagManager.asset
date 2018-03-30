@@ -31,7 +31,7 @@ TagManager:
   - Player
   - Obstacle
   - Background
-  - 
+  - Sky
   - 
   - 
   - 
@@ -52,6 +52,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Sky
+    uniqueID: 3257876837
+    locked: 0
+  - name: Background
+    uniqueID: 3598558769
+    locked: 0
+  - name: Ground
+    uniqueID: 2056320417
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Obstacle
+    uniqueID: 2705407417
+    locked: 0
+  - name: Player
+    uniqueID: 2154363993
     locked: 0

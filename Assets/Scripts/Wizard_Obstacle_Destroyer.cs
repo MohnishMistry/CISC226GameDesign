@@ -10,6 +10,7 @@ public class Wizard_Obstacle_Destroyer : MonoBehaviour
     private Collider2D obstacleCollider;
     private Collider2D playerCollider;
     public GameManager theGameManager;
+    private AudioSource DestructionSound;
 
     // Use this for initialization
     void Start()
@@ -18,12 +19,14 @@ public class Wizard_Obstacle_Destroyer : MonoBehaviour
         controller = player.GetComponent<Player_Controller>();
         obstacleCollider = GetComponent<Collider2D>();
         playerCollider = player.GetComponent<Collider2D>();
+        DestructionSound = GameObject.Find("Troll and Wolf Destruction").GetComponent<AudioSource>();
     }
 
     void OnTriggerEnter2D(Collider2D obj)
     {
         if (obj.gameObject.tag == "Projectile")
         {
+            DestructionSound.Play();
             gameObject.SetActive(false);
         }
     }

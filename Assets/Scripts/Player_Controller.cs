@@ -19,6 +19,8 @@ public class Player_Controller : MonoBehaviour {
 
     public GameManager theGameManager;
 
+    public AudioSource KnightWalk, GhostWizardWalk, RobotWalk;
+
 
     public float jumpTime;
     private float jumpTimeTracker; 
@@ -71,7 +73,6 @@ public class Player_Controller : MonoBehaviour {
         //    theGameManager.RestartGame();
         //}
 
-
         for (int i = 0; i < CHMAX * 2; i++)
         {
             if (i != characterselect - 1 && i != characterselect + CHMAX - 1)
@@ -109,7 +110,7 @@ public class Player_Controller : MonoBehaviour {
 
         if (grounded)
         {
-            jumpTimeTracker = jumpTime; 
+            jumpTimeTracker = jumpTime;
         }
 
         if ((Input.GetKeyDown(KeyCode.DownArrow) || (Input.GetKeyDown(KeyCode.Space)) || Input.GetKeyUp(KeyCode.Joystick1Button2)))

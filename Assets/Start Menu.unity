@@ -689,6 +689,20 @@ Prefab:
       propertyPath: m_Name
       value: Start Background
       objectReference: {fileID: 0}
+    - target: {fileID: 212398772973315490, guid: 77ee9ee8db377ab458c9ded75a7f6a42,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a3dbc0b6821999b489941ec810451825,
+        type: 3}
+    - target: {fileID: 4812388634193878, guid: 77ee9ee8db377ab458c9ded75a7f6a42, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -7.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4812388634193878, guid: 77ee9ee8db377ab458c9ded75a7f6a42, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -9.51
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 77ee9ee8db377ab458c9ded75a7f6a42, type: 2}
   m_IsPrefabParent: 0
@@ -1249,6 +1263,20 @@ Prefab:
     - target: {fileID: 1174779819497210, guid: 77ee9ee8db377ab458c9ded75a7f6a42, type: 2}
       propertyPath: m_Name
       value: Start Background
+      objectReference: {fileID: 0}
+    - target: {fileID: 212398772973315490, guid: 77ee9ee8db377ab458c9ded75a7f6a42,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a3dbc0b6821999b489941ec810451825,
+        type: 3}
+    - target: {fileID: 4812388634193878, guid: 77ee9ee8db377ab458c9ded75a7f6a42, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -7.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4812388634193878, guid: 77ee9ee8db377ab458c9ded75a7f6a42, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -9.478
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 77ee9ee8db377ab458c9ded75a7f6a42, type: 2}

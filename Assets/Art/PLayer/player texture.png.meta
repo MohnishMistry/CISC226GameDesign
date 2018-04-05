@@ -1,0 +1,417 @@
+fileFormatVersion: 2
+guid: e14f4d95f6d068a4a939b85918f8295b
+timeCreated: 1522890345
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: player texture_0
+    21300002: player texture_1
+    21300004: player texture_2
+    21300006: player texture_3
+    21300008: player texture_4
+    21300010: player texture_5
+    21300012: player texture_6
+    21300014: player texture_7
+    21300016: player texture_8
+    21300018: player texture_9
+    21300020: player texture_10
+    21300022: player texture_11
+    21300024: player texture_13
+    21300026: player texture_14
+    21300028: player texture_15
+    21300030: player texture_16
+    21300032: player texture_17
+    21300034: player texture_18
+    21300036: player texture_19
+    21300038: player texture_20
+    21300040: player texture_23
+    21300042: player texture_24
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player texture_0
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 1352
+        width: 101
+        height: 129
+      alignment: 9
+      pivot: {x: 0.521737, y: 0.14260368}
+      border: {x: 0, y: 0, z: 0, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player texture_1
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1414
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player texture_2
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 1394
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player texture_3
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 1400
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player texture_4
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1353
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player texture_5
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1344
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player texture_6
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1336
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player texture_7
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1331
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player texture_8
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 1328
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player texture_9
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1163
+        width: 84
+        height: 120
+      alignment: 9
+      pivot: {x: 0.27784312, y: 0.88420105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player texture_10
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 1096
+        width: 119
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player texture_11
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1190
+        width: 106
+        height: 101
+      alignment: 9
+      pivot: {x: 0.15825841, y: 0.8695286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player texture_13
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 1138
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player texture_14
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 1141
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player texture_15
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1127
+        width: 23
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player texture_16
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 1124
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player texture_17
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1124
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player texture_18
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1008
+        width: 44
+        height: 102
+      alignment: 9
+      pivot: {x: 0.5498959, y: 0.76904774}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player texture_19
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1095
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player texture_20
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1001
+        width: 46
+        height: 118
+      alignment: 9
+      pivot: {x: 0.57158893, y: 0.7790807}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player texture_23
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1001
+        width: 59
+        height: 31
+      alignment: 9
+      pivot: {x: 0.23952523, y: 0.7124614}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player texture_24
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 1008
+        width: 57
+        height: 29
+      alignment: 9
+      pivot: {x: 0.28815982, y: 0.57570463}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

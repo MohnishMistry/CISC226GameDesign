@@ -8,19 +8,29 @@ public class DeathScript : MonoBehaviour
     public GameObject player;
     public GameObject DeathUI;
     public Player_Controller Controller;
+    private AudioSource DeathBell;
+    private AudioClip DeathBellSound;
+    private bool PlayedDeath;
 
     public GameManager theGameManager; 
     void Start()
     {
+        PlayedDeath = false;
         DeathUI.SetActive(false);
         player = GameObject.Find("Player");
+        DeathBell = GameObject.Find("Death Bell").GetComponent<AudioSource>();
         Controller = player.GetComponent<Player_Controller>();
     }
 
     void Update()
     {
         if (Controller.death == true)
-        {
+        {   
+            if (PlayedDeath == false)
+            {
+                DeathBell.Play();
+                PlayedDeath = true;
+            }
             Died();
         }
     }
@@ -36,7 +46,9 @@ public class DeathScript : MonoBehaviour
     {
         DeathUI.SetActive(false);
         Time.timeScale = 1;
-        theGameManager.RestartGame(); 
+        PlayedDeath = false;
+        theGameManager.RestartGame();
+
     }
 
     public void Quit()

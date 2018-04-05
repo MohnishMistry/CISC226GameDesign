@@ -5,9 +5,10 @@ using UnityEngine;
 public class Send_Projectile : MonoBehaviour {
 
     public GameObject player;
-    public GameObject projectile;
+    //public GameObject projectile;
     private Player_Controller controller;
-    public GameObject projectileNew; 
+    public GameObject projectileNew;
+    
 
     //public Object_Pooler[] projectilePool;
 
@@ -20,9 +21,20 @@ public class Send_Projectile : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (controller.characterselect == 4 && controller.ability == true && projectileNew.activeSelf == false)
+        if (controller.characterselect == 4 && controller.ability == true)
         {
-            StartCoroutine(Delay());
+            if (projectileNew.GetComponent<Projectile_Motion>().ready_Projectile == true)
+            {
+                projectileNew.GetComponent<Projectile_Motion>().ready_Projectile = false;
+                Spawn_Projectile(player.transform.position);
+                StartCoroutine(DelayView());
+            }
+            else
+            {
+                projectileNew.SetActive(false);
+                Spawn_Projectile(player.transform.position);
+                StartCoroutine(DelayView());
+            }
         }
     }
 
@@ -32,16 +44,16 @@ public class Send_Projectile : MonoBehaviour {
         projectileNew.transform.position = newPosition;
     }
 
-    IEnumerator Delay()
+    /*IEnumerator Delay()
     {
         yield return new WaitForSeconds(0.25f);
         Spawn_Projectile(player.transform.position);
         StartCoroutine(DelayView()); 
-    }
+    }*/
 
     IEnumerator DelayView()
     {
-        yield return new WaitForSeconds(0.35f);
+        yield return new WaitForSeconds(0.2f);
         projectileNew.SetActive(true);
     }
 

@@ -9,16 +9,16 @@ public class Knight_Obstacle_Destroyer : MonoBehaviour {
     private Collider2D playerCollider;
     public GameManager theGameManager;
     private AudioSource DestructionSound;
- 
+
 
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         player = GameObject.Find("Player");
         controller = player.GetComponent<Player_Controller>();
         obstacleCollider = GetComponent<Collider2D>();
         playerCollider = player.GetComponent<Collider2D>();
-        DestructionSound = this.GetComponentInChildren<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -28,8 +28,7 @@ public class Knight_Obstacle_Destroyer : MonoBehaviour {
         {
             if (controller.characterselect == 1 && controller.ability == true )
             {
-                DestructionSound.Play();
-                //meObject.SetActive(false);
+                gameObject.SetActive(false);
             }
             else
             {

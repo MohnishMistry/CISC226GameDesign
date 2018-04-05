@@ -16,6 +16,7 @@ public class Points : MonoBehaviour {
         if (someObject.gameObject.name == "Player")
         {
             scoreManager.AddPoints(pointsToGive);
+            GameObject.Find("Candy Crunch").GetComponent<AudioSource>().Play();
             gameObject.SetActive(false);
 
         }

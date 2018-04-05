@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour {
         BackgroundGenerator.position = backgroundStartPoint;
         thePlayer.gameObject.SetActive(true);
         OnDeathClear();
+        GameObject.Find("Background Music").GetComponent<AudioSource>().Play();
 
         scoreManager.scoreCounter = 0;
         scoreManager.increasingScore = true;

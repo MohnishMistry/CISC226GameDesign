@@ -26,7 +26,7 @@ public class Obstacle_Generator : MonoBehaviour {
 
     public void Spawn()
     {
-        if (Random.value > 0.25)
+        if (Random.value > 0.2)
         {
             obstacleSelector = Random.Range(0, obstaclePool.Length);
             GameObject newObstacle = obstaclePool[obstacleSelector].GetPooledObject();
@@ -43,7 +43,7 @@ public class Obstacle_Generator : MonoBehaviour {
             }
             else if (newObstacle.tag == "Dummy")
             {
-                obstaclePosition = new Vector3((transform.position.x + obstacleDistance), transform.position.y, transform.position.z); //Move Obstacle Generator to a random distance on the platform            }
+                obstaclePosition = new Vector3((transform.position.x + obstacleDistance), transform.position.y+0.2f, transform.position.z); //Move Obstacle Generator to a random distance on the platform            }
             }
             else if (newObstacle.tag == "Large Ghost Wall")
             {
@@ -57,7 +57,7 @@ public class Obstacle_Generator : MonoBehaviour {
             }
             else if (newObstacle.tag == "Robot Wall")
             {
-                obstaclePosition = new Vector3((transform.position.x + obstacleDistance), 3.52f, transform.position.z); //Move Obstacle Generator to a random distance on the platform
+                obstaclePosition = new Vector3((transform.position.x + obstacleDistance), 3.82f, transform.position.z); //Move Obstacle Generator to a random distance on the platform
             }
             else if (newObstacle.tag == "Robot Floor")
             {

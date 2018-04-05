@@ -5,6 +5,7 @@ using UnityEngine;
 public class Projectile_Motion : MonoBehaviour {
 
     public GameObject player;
+    public bool ready_Projectile = true;
 
     // Use this for initialization
     void Start () {
@@ -18,6 +19,7 @@ public class Projectile_Motion : MonoBehaviour {
 
         if (gameObject.transform.position.x - player.transform.position.x > 15)
         {
+            ready_Projectile = true;
             gameObject.SetActive(false);
         }
         

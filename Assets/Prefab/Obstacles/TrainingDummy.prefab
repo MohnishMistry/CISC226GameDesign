@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212261562079516158}
   - component: {fileID: 61440067008407472}
   - component: {fileID: 114184621033886350}
-  - component: {fileID: 114269618383486572}
+  - component: {fileID: 114344376786940974}
   m_Layer: 10
   m_Name: TrainingDummy
   m_TagString: Dummy
@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1597713958119274}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.66, y: -1.76, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalPosition: {x: -6.885, y: -1.445, z: 0}
+  m_LocalScale: {x: 0.85, y: 0.85, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -55,7 +55,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.055845976, y: -0.08190751}
   m_SpriteTilingProperty:
     border: {x: 0.07, y: 0.03, z: 0.02, w: 0.17}
     pivot: {x: 0.5, y: 0.5}
@@ -66,7 +66,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.18, y: 3.35}
+  m_Size: {x: 1.1003089, y: 3.186185}
   m_EdgeRadius: 0
 --- !u!114 &114184621033886350
 MonoBehaviour:
@@ -81,7 +81,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformDestructionPoint: {fileID: 0}
   player: {fileID: 0}
---- !u!114 &114269618383486572
+--- !u!114 &114344376786940974
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -89,7 +89,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1597713958119274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95ba61ba9b38cad4d8dc811d6452ed49, type: 3}
+  m_Script: {fileID: 11500000, guid: d4f93d19a72da9546bf8b32266d65bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}

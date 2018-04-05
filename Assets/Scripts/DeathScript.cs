@@ -27,6 +27,7 @@ public class DeathScript : MonoBehaviour
 
     public void Died()
     {
+        GameObject.Find("Background Music").GetComponent<AudioSource>().Stop();
         DeathUI.SetActive(true);
         Time.timeScale = 0;
     }

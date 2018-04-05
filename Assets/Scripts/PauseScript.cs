@@ -37,6 +37,7 @@ public class PauseScript : MonoBehaviour {
     {
         PauseUI.SetActive(false);
         Time.timeScale = 1;
+        GameObject.Find("Background Music").GetComponent<AudioSource>().UnPause();
         GamePaused = false;
     }
 
@@ -44,6 +45,7 @@ public class PauseScript : MonoBehaviour {
     {
         PauseUI.SetActive(true);
         Time.timeScale = 0;
+        GameObject.Find("Background Music").GetComponent<AudioSource>().Pause();
         GamePaused = true;
     }
 

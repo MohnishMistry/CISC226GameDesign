@@ -27,6 +27,8 @@ public class Wizard_Obstacle_Destroyer : MonoBehaviour
         if (obj.gameObject.tag == "Projectile")
         {
             DestructionSound.Play();
+            //obj.gameObject.GetComponent<Projectile_Motion>().ready_Projectile = true;
+            //obj.gameObject.SetActive(false);
             gameObject.SetActive(false);
         }
     }

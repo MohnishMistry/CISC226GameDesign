@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -47,7 +48,9 @@ public class GameManager : MonoBehaviour {
 
         scoreManager.scoreCounter = 0;
         scoreManager.increasingScore = true;
-        platformGeneratorObject.spawnedCostume = false; 
+        platformGeneratorObject.spawnedCostume = false;
+        PlayerPrefs.SetInt("Level", 4);
+        SceneManager.LoadScene("All Costumes");
     }
 
     List<GameObject> FindGameObjectsWithLayer(int layer)

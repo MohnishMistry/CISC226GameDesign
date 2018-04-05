@@ -26,31 +26,86 @@ public class Player_Controller : MonoBehaviour {
     GameObject Knight, Ghost, Robot, Wizard, KnightIcon, GhostIcon, RobotIcon, WizardIcon;
     public GameObject[] objList;
     public int characterselect;
-    public int CHMAX = 4;
+    public int CHMAX;
 
     public Vector3 startingPosition; 
 
 	// Use this for initialization
 	void Start () {
-        Knight = GameObject.Find("Knight Costume");
-        Ghost = GameObject.Find("Ghost Costume");
-        Robot = GameObject.Find("Robot Costume");
-        Wizard = GameObject.Find("Wizard Costume");
-        KnightIcon = GameObject.Find("Knight Icon");
-        GhostIcon = GameObject.Find("Ghost Icon");
-        RobotIcon = GameObject.Find("Robot Icon");
-        WizardIcon = GameObject.Find("Wizard Icon");
-        objList = new GameObject[] {Knight, Ghost, Robot, Wizard, KnightIcon, GhostIcon, RobotIcon, WizardIcon};
+        if (PlayerPrefs.GetInt("Level") == 1)
+        {
+            CHMAX = 1;
+            Knight = GameObject.Find("Knight Costume");
+            KnightIcon = GameObject.Find("Knight Icon");
+            KnightIcon.SetActive(true);
+            objList = new GameObject[] { Knight, KnightIcon };
+        }
+
+        if (PlayerPrefs.GetInt("Level") == 2)
+        {
+            CHMAX = 2;
+
+            Knight = GameObject.Find("Knight Costume");
+            KnightIcon = GameObject.Find("Knight Icon");
+            KnightIcon.SetActive(true);
+
+            Ghost = GameObject.Find("Ghost Costume");
+            GhostIcon = GameObject.Find("Ghost Icon");
+            GhostIcon.SetActive(false);
+
+            objList = new GameObject[] { Knight, Ghost, KnightIcon, GhostIcon };
+
+        }
+
+        if (PlayerPrefs.GetInt("Level") == 3)
+        {
+            CHMAX = 3;
+
+            Knight = GameObject.Find("Knight Costume");
+            KnightIcon = GameObject.Find("Knight Icon");
+            KnightIcon.SetActive(true);
+
+            Ghost = GameObject.Find("Ghost Costume");
+            GhostIcon = GameObject.Find("Ghost Icon");
+            GhostIcon.SetActive(false);
+
+            Robot = GameObject.Find("Robot Costume");
+            RobotIcon = GameObject.Find("Robot Icon");
+            RobotIcon.SetActive(false);
+
+            objList = new GameObject[] { Knight, Ghost, Robot, KnightIcon, GhostIcon, RobotIcon};
+
+        }
+
+        if (PlayerPrefs.GetInt("Level") == 4)
+        {
+            CHMAX = 4;
+
+            Knight = GameObject.Find("Knight Costume");
+            KnightIcon = GameObject.Find("Knight Icon");
+            KnightIcon.SetActive(true);
+
+            Ghost = GameObject.Find("Ghost Costume");
+            GhostIcon = GameObject.Find("Ghost Icon");
+            GhostIcon.SetActive(false);
+
+            Robot = GameObject.Find("Robot Costume");
+            RobotIcon = GameObject.Find("Robot Icon");
+            RobotIcon.SetActive(false);
+
+            Wizard = GameObject.Find("Wizard Costume");
+            WizardIcon = GameObject.Find("Wizard Icon");
+            WizardIcon.SetActive(false);
+
+            objList = new GameObject[] { Knight, Ghost, Robot, Wizard, KnightIcon, GhostIcon, RobotIcon, WizardIcon };
+        }
+
         myRigidBody = GetComponent<Rigidbody2D>();
         myCollider = GetComponent<Collider2D>();
 
         myAnimator = Knight.GetComponent<Animator>();
         myAnimator.SetBool("ability", false);
         characterselect = 1;
-        KnightIcon.SetActive(true);
-        GhostIcon.SetActive(false);
-        RobotIcon.SetActive(false);
-        WizardIcon.SetActive(false);
         jumpTimeTracker = jumpTime;
         switchCostumeLeft = false;
         switchCostumeRight = false;

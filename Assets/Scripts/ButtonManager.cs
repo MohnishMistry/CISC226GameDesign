@@ -10,6 +10,7 @@ public class ButtonManager : MonoBehaviour {
     public void PlayButton(string newGame)
     {
         SceneManager.LoadScene(newGame);
+        PlayerPrefs.SetInt("Level", 4); 
     }
 
 

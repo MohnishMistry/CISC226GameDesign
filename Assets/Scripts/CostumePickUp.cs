@@ -20,7 +20,13 @@ public class CostumePickUp : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         DontDestroyOnLoad(scoreManager);
-        SceneManager.LoadScene("Three Costumes");
+        if (PlayerPrefs.GetInt("Level") == 1)
+        {
+            PlayerPrefs.SetInt("Level", 2); 
+            SceneManager.LoadScene("Two Costumes");
+        }
+
+
 
     }
 

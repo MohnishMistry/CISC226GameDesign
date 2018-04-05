@@ -2422,7 +2422,7 @@ MonoBehaviour:
   jumpTime: 0.15
   objList: []
   characterselect: 1
-  CHMAX: 4
+  CHMAX: 0
   startingPosition: {x: 0, y: 0, z: 0}
 --- !u!50 &700929748
 Rigidbody2D:

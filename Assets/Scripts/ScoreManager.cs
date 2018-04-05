@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour {
 
     public Text scoreText;
+    public Text deadScore;
     public Text highScoreText;
 
     public float scoreCounter;
@@ -36,7 +37,6 @@ public class ScoreManager : MonoBehaviour {
         }
         scoreText.text = "Score: " + Mathf.Round(scoreCounter);
         highScoreText.text = "HighScore: " + Mathf.Round(highScoreCounter);
-              
 
     }
 

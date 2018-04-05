@@ -15,15 +15,18 @@ public class DeathScript : MonoBehaviour
     public GameManager theGameManager; 
     void Start()
     {
+        theGameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         PlayedDeath = false;
-        DeathUI.SetActive(false);
         player = GameObject.Find("Player");
-        DeathBell = GameObject.Find("Death Bell").GetComponent<AudioSource>();
         Controller = player.GetComponent<Player_Controller>();
+        DeathUI.SetActive(false);
+        DeathBell = GameObject.Find("Death Bell").GetComponent<AudioSource>();
+
     }
 
     void Update()
     {
+
         if (Controller.death == true)
         {   
             if (PlayedDeath == false)
@@ -45,8 +48,8 @@ public class DeathScript : MonoBehaviour
     public void Restart(string newGame)
     {
         DeathUI.SetActive(false);
-        Time.timeScale = 1;
         PlayedDeath = false;
+        Time.timeScale = 1;
         theGameManager.RestartGame();
 
     }

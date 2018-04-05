@@ -13,6 +13,7 @@ public class PauseScript : MonoBehaviour {
 
     void Start()
     {
+        theGameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         PauseUI.SetActive(false);
         player = GameObject.Find("Player");
         Controller = player.GetComponent<Player_Controller>();
@@ -20,6 +21,7 @@ public class PauseScript : MonoBehaviour {
 
     void Update()
     {
+        
         if (Input.GetKeyDown(KeyCode.Escape) && Controller.death == false)
         {
             if (GamePaused)

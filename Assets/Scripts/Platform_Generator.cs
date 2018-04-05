@@ -17,7 +17,11 @@ public class Platform_Generator : MonoBehaviour {
     private Obstacle_Generator obstacleGeneratorScript;
     public GameObject obstacleGenerator;
 
-    public Candy_Collection candyCollector; 
+    public Candy_Collection candyCollector;
+
+    public bool spawnedCostume = false;
+    public Player_Controller playerController; 
+
     // Use this for initialization
     void Start () {
         platformWidths = new float[objectsPool.Length];
@@ -28,6 +32,7 @@ public class Platform_Generator : MonoBehaviour {
         }
 
         obstacleGeneratorScript = obstacleGenerator.GetComponent<Obstacle_Generator>();
+        playerController = GameObject.Find("Player").GetComponent<Player_Controller>();
     }
 
     // Update is called once per frame
@@ -45,6 +50,12 @@ public class Platform_Generator : MonoBehaviour {
             newPlatform.transform.rotation = transform.rotation;
 
             newPlatform.SetActiveRecursively(true);
+
+            if (transform.position.x - playerController.startingPosition.x > 50 && spawnedCostume == false && PlayerPrefs.GetInt("Level" ) < 4) 
+            {
+                obstacleGeneratorScript.SpawnCostume();
+                spawnedCostume = true; 
+            }
 
             if (platformWidths[platformSelector] > 3)
             {

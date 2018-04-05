@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -13,12 +14,15 @@ public class GameManager : MonoBehaviour {
     private Vector3 playerStartPoint;
 
     private ScoreManager scoreManager;
+
+    public Platform_Generator platformGeneratorObject; 
 	// Use this for initialization
 	void Start () {
         backgroundStartPoint = BackgroundGenerator.position;
         platformStartPoint = platformGenerator.position;
         playerStartPoint = thePlayer.transform.position;
-        scoreManager = FindObjectOfType<ScoreManager>(); 
+        scoreManager = FindObjectOfType<ScoreManager>();
+        platformGeneratorObject = GameObject.Find("PlatformGenerator").GetComponent<Platform_Generator>();
 	}
 	
 	// Update is called once per frame
@@ -42,10 +46,17 @@ public class GameManager : MonoBehaviour {
         BackgroundGenerator.position = backgroundStartPoint;
         thePlayer.gameObject.SetActive(true);
         OnDeathClear();
-        GameObject.Find("Background Music").GetComponent<AudioSource>().Play();
+        GameObject.Find("Background Music").GetComponent<AudioSource>().Stop();
 
         scoreManager.scoreCounter = 0;
-        scoreManager.increasingScore = true;
+        //scoreManager.increasingScore = true;
+        platformGeneratorObject.spawnedCostume = false;
+
+        Destroy(GameObject.Find("Score Manager House"));
+
+        PlayerPrefs.SetInt("Level", 0);
+        SceneManager.LoadScene("No Costumes");
+
     }
 
     List<GameObject> FindGameObjectsWithLayer(int layer)

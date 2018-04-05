@@ -9,5 +9,17 @@ EditorBuildSettings:
     path: Assets/Start Menu.unity
     guid: fbf0c492045e07f4391848744ec71d7d
   - enabled: 1
-    path: Assets/knight scene.unity
+    path: Assets/No Costumes.unity
+    guid: 76923638a658edd4d8784750a1816494
+  - enabled: 1
+    path: Assets/One Costumes.unity
+    guid: a300b0abd958a9b4f8c767a5781f76ba
+  - enabled: 1
+    path: Assets/Two Costumes.unity
+    guid: b75841ab483b32b43ad08ee800113321
+  - enabled: 1
+    path: Assets/Three Costumes.unity
+    guid: 2395f4956e1ec3942a42566a511e903b
+  - enabled: 1
+    path: Assets/All Costumes.unity
     guid: 8e0bc5de9f4254e458de58618597fb36

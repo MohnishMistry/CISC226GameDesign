@@ -25,67 +25,97 @@ public class Player_Controller : MonoBehaviour {
     public float jumpTime;
     private float jumpTimeTracker; 
 
-    GameObject Knight, Ghost, Robot, Wizard, KnightIcon, GhostIcon, RobotIcon, WizardIcon;
+    GameObject Knight, Ghost, Robot, Wizard,NoCostume, KnightIcon, GhostIcon, RobotIcon, WizardIcon;
     public GameObject[] objList;
     public int characterselect;
-    public int CHMAX = 4;
+    public int CHMAX;
 
+    public Vector3 startingPosition; 
 
 
 	// Use this for initialization
 	void Start () {
-        Knight = GameObject.Find("Knight Costume");
-        Ghost = GameObject.Find("Ghost Costume");
-        Robot = GameObject.Find("Robot Costume");
-        Wizard = GameObject.Find("Wizard Costume");
-        KnightIcon = GameObject.Find("Knight Icon");
-        GhostIcon = GameObject.Find("Ghost Icon");
-        RobotIcon = GameObject.Find("Robot Icon");
-        WizardIcon = GameObject.Find("Wizard Icon");
-        objList = new GameObject[] {Knight, Ghost, Robot, Wizard, KnightIcon, GhostIcon, RobotIcon, WizardIcon};
-        myRigidBody = GetComponent<Rigidbody2D>();
-        myCollider = GetComponent<Collider2D>();
 
-        myAnimator = Knight.GetComponent<Animator>();
-        myAnimator.SetBool("ability", false);
-        characterselect = 1;
-        KnightIcon.SetActive(true);
+        Knight = GameObject.Find("Knight Costume");
+        KnightIcon = GameObject.Find("Knight Icon");
+        Ghost = GameObject.Find("Ghost Costume");
+        GhostIcon = GameObject.Find("Ghost Icon");
+        Robot = GameObject.Find("Robot Costume");
+        RobotIcon = GameObject.Find("Robot Icon");
+        Wizard = GameObject.Find("Wizard Costume");
+        WizardIcon = GameObject.Find("Wizard Icon");
+
+        Knight.SetActive(false);
+        Ghost.SetActive(false);
+        Robot.SetActive(false);
+        Wizard.SetActive(false);
+
+        KnightIcon.SetActive(false);
         GhostIcon.SetActive(false);
         RobotIcon.SetActive(false);
         WizardIcon.SetActive(false);
+
+
+        objList = new GameObject[] { Knight, Ghost, Robot, Wizard, KnightIcon, GhostIcon, RobotIcon, WizardIcon };
+
+
+
+        myRigidBody = GetComponent<Rigidbody2D>();
+        myCollider = GetComponent<Collider2D>();
+
+        //myAnimator = Knight.GetComponent<Animator>();
+        //myAnimator.SetBool("ability", false);
         jumpTimeTracker = jumpTime;
         switchCostumeLeft = false;
         switchCostumeRight = false;
         falling = false;
         death = false;
+        startingPosition = transform.position; 
 
     }
 	
 	// Update is called once per frame
 	void Update () {
+
+        if (PlayerPrefs.GetInt("Level") == 0)
+        {
+            CHMAX = 0;
+            NoCostume = GameObject.Find("No Costume");
+            myAnimator = NoCostume.GetComponent<Animator>();
+            myAnimator.SetBool("grounded", grounded);
+
+
+        }
+
         myRigidBody.velocity = new Vector2(moveSpeed,myRigidBody.velocity.y);
         grounded = Physics2D.IsTouchingLayers(myCollider, whatIsGround);
-        myAnimator.SetBool("grounded", grounded);
-        ability = myAnimator.GetBool("ability");
 
         //if (death == true)
         //{
         //    theGameManager.RestartGame();
         //}
 
-        for (int i = 0; i < CHMAX * 2; i++)
+
+
+        if (CHMAX != 0)
         {
-            if (i != characterselect - 1 && i != characterselect + CHMAX - 1)
+            for (int i = 0; i < 8; i++)
             {
-                objList[i].SetActive(false);
+                if (i != characterselect - 1 && i != characterselect + 3)
+                {
+                    objList[i].SetActive(false);
+                }
+                else
+                {
+                    objList[i].SetActive(true);
+                }
             }
-            else
-            {
-                objList[i].SetActive(true);
-            }
+
+            myAnimator = objList[characterselect - 1].GetComponent<Animator>();
+            ability = myAnimator.GetBool("ability");
+            myAnimator.SetBool("grounded", grounded);
         }
-        myAnimator = objList[characterselect-1].GetComponent<Animator>();
-        
+
 
         if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Joystick1Button0)) && grounded && !falling )
         {

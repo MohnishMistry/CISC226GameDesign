@@ -7,6 +7,7 @@ public class Background_Generator : MonoBehaviour {
     public Transform BackGroundGenerationPoint;
     private float backgroundWidth;
     public Object_Pooler[] obstaclePool;
+    public Object_Pooler[] cloudsPool;
     public int backgroundSelector;
 
     // Use this for initialization
@@ -21,12 +22,15 @@ public class Background_Generator : MonoBehaviour {
         {
             backgroundSelector = Random.Range(0, obstaclePool.Length);
             GameObject newBackground = obstaclePool[backgroundSelector].GetPooledObject();
+            GameObject newCloud = cloudsPool[backgroundSelector].GetPooledObject();
 
-            transform.position = new Vector3(transform.position.x + backgroundWidth, transform.position.y, transform.position.z);
+            transform.position = new Vector3(transform.position.x + backgroundWidth, 0.1f, transform.position.z);
+            Vector3 cloudsLocation = new Vector3(transform.position.x + backgroundWidth+3f, 5f, transform.position.z);
 
             newBackground.transform.position = transform.position;
             newBackground.SetActive(true);
-
+            newCloud.transform.position = cloudsLocation;
+            newCloud.SetActive(true);
         }
     }
 }
